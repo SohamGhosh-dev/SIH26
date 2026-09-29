@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIH VOID VERSOR | Cadastral Dashboard & 3D Spatial Twin</title>
+  
+  <script src="https://cesium.com/downloads/cesiumjs/releases/1.114/Build/Cesium/Cesium.js"></script>
+  <link href="https://cesium.com/downloads/cesiumjs/releases/1.114/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; }
+    
+    html, body {
+      width: 100%; height: 100%; overflow: hidden;
+      background-color: #f8fafc; color: #0f172a;
+    }
+
+    /* Top Tricolor Ribbon (Saffron, White, Green) */
+    .top-tricolor-bar {
+      height: 5px; width: 100%;
+      background: linear-gradient(90deg, #f97316 0%, #f97316 33.3%, #ffffff 33.3%, #ffffff 66.6%, #16a34a 66.6%, #16a34a 100%);
+      position: absolute; top: 0; left: 0; z-index: 1001;
+    }
+
+    /* Official Government Header Ribbon (Light Theme) */
+    #topNavBar {
+      position: absolute; top: 5px; left: 0; right: 0; height: 62px; z-index: 1000;
+      background: #ffffff;
+      border-bottom: 1px solid #e2e8f0;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 24px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .brand-group {
+      display: flex; align-items: center; gap: 14px;
+    }
+
+    .brand-emblem-badge {
+      width: 38px; height: 38px; border-radius: 8px;
+      background: #ffffff; border: 1px solid #cbd5e1;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px; color: #d97706; box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    }
+
+    .brand-title {
+      font-size: 18px; font-weight: 900; color: #d97706; letter-spacing: 0.6px; margin: 0;
+      text-transform: uppercase; line-height: 1.1;
+    }
+
+    .brand-sub {
+      font-size: 11.5px; color: #64748b; border-left: 1px solid #cbd5e1;
+      padding-left: 10px; margin-left: 4px; font-weight: 500;
+    }
+
+    /* Navigation Tabs Switcher */
+    .view-tabs {
+      display: flex; align-items: center; gap: 4px;
+      background: #f1f5f9; padding: 4px; border-radius: 8px; border: 1px solid #e2e8f0;
+    }
+
+    .tab-btn {
+      padding: 7px 14px; border-radius: 6px; font-size: 12.5px; font-weight: 700;
+      border: none; background: transparent; color: #475569; cursor: pointer;
+      display: flex; align-items: center; gap: 6px; transition: all 0.2s;
+    }
+
+    .tab-btn.active {
+      background: #ffffff; color: #d97706; box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    .role-banner {
+      display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px; border-radius: 20px;
+      font-size: 11.5px; font-weight: 800; letter-spacing: 0.3px; text-transform: uppercase;
+      cursor: pointer; transition: transform 0.2s;
+    }
+    .role-banner:hover { transform: scale(1.03); }
+
+    .role-citizen { background: #f0fdf4; color: #15803d; border: 1px solid #bbf7d0; }
+    .role-enquiry { background: #ecfeff; color: #0891b2; border: 1px solid #a5f3fc; }
+    .role-operator { background: #fffbeb; color: #b45309; border: 1px solid #fde68a; }
+    .role-dept { background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; }
+
+    .nav-right-controls {
+      display: flex; align-items: center; gap: 10px;
+    }
+
+    .top-select {
+      background: #f8fafc; border: 1px solid #cbd5e1; color: #0f172a;
+      padding: 6px 12px; border-radius: 6px; font-size: 12px; outline: none; font-weight: 600;
+    }
+
+    .btn-nav-light {
+      background: #f8fafc; color: #0f172a; border: 1px solid #cbd5e1; padding: 7px 14px;
+      border-radius: 6px; font-size: 12px; font-weight: 700; cursor: pointer;
+      display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s; text-decoration: none;
+    }
+    .btn-nav-light:hover { background: #ffffff; border-color: #94a3b8; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+
+    .btn-logout { background: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; }
+    .btn-logout:hover { background: #fca5a5; color: #7f1d1d; }
+
+    /* Indian Landmark Background Slideshow */
+    #landmarkSlideshow {
+      position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+      z-index: 1; pointer-events: none; opacity: 1; transition: opacity 0.5s ease;
+    }
+
+    .dashboard-slide {
+      position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+      background-size: cover; background-position: center;
+      opacity: 0; transition: opacity 1.5s ease-in-out;
+    }
+
+    .dashboard-slide.active { opacity: 1; }
+
+    .dashboard-vignette {
+      position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(255, 255, 255, 0.35); backdrop-filter: blur(2px);
+    }
+
+    /* Main Container Views */
+    .view-container {
+      position: absolute; top: 67px; left: 0; width: 100%; height: calc(100% - 67px);
+      z-index: 10; display: none; overflow-y: auto; padding: 30px 40px;
+    }
+
+    .view-container.active { display: block; }
+
+    /* VIEW 1: Dashboard Analytics & Overview (Default View!) */
+    .dashboard-grid {
+      max-width: 1280px; margin: 0 auto; display: flex; flex-direction: column; gap: 24px;
+    }
+
+    .welcome-banner {
+      background: rgba(255, 255, 255, 0.88); backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.9); border-radius: 16px;
+      padding: 24px 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      display: flex; align-items: center; justify-content: space-between;
+    }
+
+    .welcome-banner h2 { font-size: 22px; color: #0f172a; font-weight: 800; }
+    .welcome-banner p { font-size: 13.5px; color: #475569; margin-top: 4px; }
+
+    /* Summary Stat Cards (Light Theme matching Screenshot) */
+    .kpi-grid {
+      display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px;
+    }
+
+    .kpi-card {
+      background: rgba(255, 255, 255, 0.88); backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.9); border-radius: 14px;
+      padding: 20px; box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+      display: flex; flex-direction: column; transition: transform 0.2s;
+    }
+    .kpi-card:hover { transform: translateY(-3px); }
+
+    .kpi-title { font-size: 11.5px; font-weight: 800; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px; }
+    .kpi-value { font-size: 26px; font-weight: 900; color: #0f172a; margin: 8px 0 4px 0; }
+    .kpi-sub { font-size: 11px; color: #475569; font-weight: 600; }
+
+    /* Dashboard Panels Grid */
+    .dash-sections-grid {
+      display: grid; grid-template-columns: 2fr 1fr; gap: 24px;
+    }
+
+    .dash-panel {
+      background: rgba(255, 255, 255, 0.88); backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.9); border-radius: 16px;
+      padding: 24px; box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    .dash-panel h3 { font-size: 16px; color: #d97706; font-weight: 800; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+
+    .table-light { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+    .table-light th, .table-light td { padding: 10px 12px; text-align: left; border-bottom: 1px solid #e2e8f0; }
+    .table-light th { background: #f8fafc; color: #475569; font-weight: 700; text-transform: uppercase; font-size: 11px; }
+
+    .badge-status { display: inline-block; padding: 3px 8px; border-radius: 4px; font-weight: 700; font-size: 10.5px; }
+    .status-green { background: #dcfce7; color: #15803d; }
+    .status-red { background: #fee2e2; color: #b91c1c; }
+    .status-orange { background: #fef3c7; color: #b45309; }
+
+    /* VIEW 2: 3D Spatial Map Canvas Container */
+    #cesiumViewContainer {
+      position: absolute; top: 67px; left: 0; width: 100%; height: calc(100% - 67px); z-index: 5; display: none;
+    }
+
+    #cesiumContainer { width: 100%; height: 100%; }
+
+    /* Floating Map Light MetaCard Overlay */
+    #metaCard {
+      position: absolute; top: 16px; left: 18px; z-index: 999;
+      background: rgba(255, 255, 255, 0.94); backdrop-filter: blur(20px);
+      color: #0f172a; padding: 20px; border-radius: 14px; width: 380px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+      border: 1px solid #cbd5e1; font-size: 13px; line-height: 1.5;
+      max-height: calc(100vh - 120px); overflow-y: auto;
+    }
+
+    #metaCard h3 { margin: 0 0 2px 0; font-size: 17px; color: #d97706; font-weight: 800; }
+    .subtitle { color: #64748b; font-size: 11.5px; margin: 0 0 14px 0; }
+
+    .legend-bar {
+      display: flex; gap: 6px; margin-bottom: 14px; padding-bottom: 10px;
+      border-bottom: 1px solid #e2e8f0; font-size: 10.5px; font-weight: 600; flex-wrap: wrap;
+    }
+    .legend-pill { display: inline-flex; align-items: center; gap: 4px; padding: 3px 7px; border-radius: 4px; background: #f1f5f9; }
+    .dot { width: 8px; height: 8px; border-radius: 50%; }
+
+    .code-pill { font-family: ui-monospace, monospace; color: #b45309; background: #fffbeb; padding: 2px 6px; border-radius: 4px; font-size: 11.5px; }
+
+    .action-group { display: flex; gap: 8px; margin-top: 14px; flex-direction: column; }
+    .btn-action {
+      width: 100%; padding: 10px; border: none; border-radius: 6px;
+      font-weight: 800; font-size: 12px; cursor: pointer; transition: opacity 0.2s;
+      display: flex; align-items: center; justify-content: center; gap: 6px; color: white;
+    }
+    .btn-claim { background: #16a34a; }
+    .btn-cad { background: #4f46e5; }
+    .btn-report { background: #0284c7; }
+    .btn-notice { background: #dc2626; }
+    .btn-tax { background: #d97706; }
+    .btn-action:hover { opacity: 0.9; }
+
+    .btn-toggle {
+      display: none; margin-top: 14px; width: 100%; padding: 10px;
+      background: #2563eb; color: white; border: none; border-radius: 6px;
+      font-weight: 700; font-size: 12px; cursor: pointer; text-align: center;
+    }
+
+    /* Landmark Caption Display */
+    #landmarkCaption {
+      position: absolute; bottom: 18px; left: 24px; z-index: 999;
+      background: rgba(255, 255, 255, 0.92); backdrop-filter: blur(10px);
+      padding: 8px 18px; border-radius: 30px; color: #334155; font-size: 12px;
+      border: 1px solid #cbd5e1; display: flex; align-items: center; gap: 8px;
+    }
+    #landmarkCaption strong { color: #d97706; }
+
+    /* Map Ribbon Controls */
+    .map-top-bar {
+      position: absolute; top: 16px; right: 18px; z-index: 999;
+      background: rgba(255, 255, 255, 0.92); backdrop-filter: blur(12px);
+      padding: 8px 14px; border-radius: 10px; border: 1px solid #cbd5e1;
+      display: flex; align-items: center; gap: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Tricolor Ribbon -->
+  <div class="top-tricolor-bar"></div>
+
+  <!-- Government Header Navigation Bar -->
+  <div id="topNavBar">
+    <div class="brand-group">
+      <div class="brand-emblem-badge">🏛️</div>
+      <div>
+        <h1 class="brand-title">SIH VOID VERSOR</h1>
+        <span class="brand-sub">Family Level Data Collection & 3D Cadastral Spatial Twin</span>
+      </div>
+      <div id="roleBadge" class="role-banner" onclick="showPermissionsInfo()">Loading Role...</div>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <div class="view-tabs">
+      <button class="tab-btn active" id="tabDash" onclick="switchView('dashboard')">📊 Dashboard & Analytics</button>
+      <button class="tab-btn" id="tabMap" onclick="switchView('map')">🗺️ 3D ULPIN Spatial Map</button>
+    </div>
+
+    <!-- Right Controls -->
+    <div class="nav-right-controls">
+      <span style="font-size:11.5px; font-weight:700; color:#d97706;">📍 Mouza:</span>
+      <select id="headerMouzaFilter" class="top-select" onchange="filterMouzaZone(this.value)">
+        <option value="ALL">Entire District (All Mouzas)</option>
+        <option value="IIF">Mouza IIF: Casadona Commercial Core</option>
+        <option value="ECO">Mouza IIE: Wetland & Eco-Cadastre</option>
+        <option value="SUB">Subterranean Utility Corridor</option>
+      </select>
+
+      <button class="btn-nav-light" id="btnToggleSlideshow" onclick="toggleLandmarkSlideshow()">🖼️ Landmark Backdrop</button>
+      <button class="btn-nav-light btn-logout" onclick="executeLogout()">🔒 Switch Role / Logout</button>
+    </div>
+  </div>
+
+  <!-- Indian Landmark Background Slideshow -->
+  <div id="landmarkSlideshow">
+    <div class="dashboard-slide active" style="background-image: url('https://images.unsplash.com/photo-1558431382-27e303142255?auto=format&fit=crop&w=1920&q=80');" data-landmark="Victoria Memorial & Howrah Bridge, Kolkata"></div>
+    <div class="dashboard-slide" style="background-image: url('https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1920&q=80');" data-landmark="Taj Mahal Heritage Complex, Agra"></div>
+    <div class="dashboard-slide" style="background-image: url('https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=1920&q=80');" data-landmark="India Gate & Red Fort Monument, New Delhi"></div>
+    <div class="dashboard-slide" style="background-image: url('https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1920&q=80');" data-landmark="Gateway of India, Mumbai"></div>
+    <div class="dashboard-slide" style="background-image: url('https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?auto=format&fit=crop&w=1920&q=80');" data-landmark="Hawa Mahal Palace, Jaipur"></div>
+    <div class="dashboard-vignette"></div>
+  </div>
+
+  <!-- ================= VIEW 1: DASHBOARD ANALYTICS OVERVIEW ================= -->
+  <div id="dashboardView" class="view-container active">
+    <div class="dashboard-grid">
+      
+      <!-- Welcome Header Banner -->
+      <div class="welcome-banner">
+        <div>
+          <h2 id="dashWelcomeTitle">Welcome to SIH VOID VERSOR Portal</h2>
+          <p id="dashWelcomeSub">National Cadastral & Family Level Data Collection Hub • ISO 19152 Architecture</p>
+        </div>
+        <button class="btn-nav-light" style="background:#d97706; color:white; border:none; padding:10px 18px; font-size:13px;" onclick="switchView('map')">Launch 3D Spatial Map →</button>
+      </div>
+
+      <!-- KPI Metrics Grid -->
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <span class="kpi-title">Total Land Parcels</span>
+          <div class="kpi-value" style="color:#0284c7;">399</div>
+          <span class="kpi-sub">BhuNaksha 2D Cadastre</span>
+        </div>
+        <div class="kpi-card">
+          <span class="kpi-title">3D ULPIN Strata Units</span>
+          <div class="kpi-value" style="color:#4f46e5;">2,626</div>
+          <span class="kpi-sub">Indexed Vertical Flats</span>
+        </div>
+        <div class="kpi-card">
+          <span class="kpi-title">Verified Match Rate</span>
+          <div class="kpi-value" style="color:#16a34a;">82.4%</div>
+          <span class="kpi-sub">Multi-Sensor Consensus</span>
+        </div>
+        <div class="kpi-card">
+          <span class="kpi-title">Red Discrepancies</span>
+          <div class="kpi-value" style="color:#dc2626;">14</div>
+          <span class="kpi-sub">Section 217 Violations</span>
+        </div>
+        <div class="kpi-card">
+          <span class="kpi-title">Unclaimed Plots</span>
+          <div class="kpi-value" style="color:#d97706;">28</div>
+          <span class="kpi-sub">Satellite Detected Land</span>
+        </div>
+      </div>
+
+      <!-- Dashboard Main Section Panels -->
+      <div class="dash-sections-grid">
+        
+        <!-- Left Panel: Recent Cadastral Audit Log -->
+        <div class="dash-panel">
+          <h3>📋 Recent Cadastral Audit Feed & Discrepancies</h3>
+          <table class="table-light">
+            <thead>
+              <tr>
+                <th>3D ULPIN / Plot ID</th>
+                <th>Structure Name</th>
+                <th>Claimed vs. Detected</th>
+                <th>Audit Status</th>
+                <th>Action Directive</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code class="code-pill">WB-KOL-PLOT-IIF-04</code></td>
+                <td>Mani Casadona Main Tower</td>
+                <td>14 Fl vs. 16 Fl (+28%)</td>
+                <td><span class="badge-status status-red">RED ANOMALY</span></td>
+                <td>Section 217 Demolition Order</td>
+              </tr>
+              <tr>
+                <td><code class="code-pill">WB-KOL-PLOT-3507</code></td>
+                <td>Mani Casadona Parking</td>
+                <td>7 Fl vs. 7 Fl (Match)</td>
+                <td><span class="badge-status status-green">VERIFIED MATCH</span></td>
+                <td>Title Certificate Cleared</td>
+              </tr>
+              <tr>
+                <td><code class="code-pill">WB-KOL-VACANT-088</code></td>
+                <td>HIDCO Commercial Reserve</td>
+                <td>Unclaimed Plot</td>
+                <td><span class="badge-status status-orange">UNCLAIMED</span></td>
+                <td>Municipal Notice Queue</td>
+              </tr>
+              <tr>
+                <td><code class="code-pill">WB-SUB-METRO-01</code></td>
+                <td>East-West Metro Tunnel</td>
+                <td>-14.0m Subsurface ROW</td>
+                <td><span class="badge-status status-green">EASEMENT ROW</span></td>
+                <td>Statutory Corridor Protected</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Right Panel: Role Specific Action Widget -->
+        <div class="dash-panel">
+          <h3 id="roleWidgetTitle">⚡ Authorized Actions</h3>
+          <div id="roleWidgetContent" style="display:flex; flex-direction:column; gap:10px; font-size:13px; color:#475569;">
+            <p>Select your authorized workflow action from the panel below.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= VIEW 2: 3D SPATIAL MAP CANVAS ================= -->
+  <div id="cesiumViewContainer">
+    
+    <!-- Floating Map Ribbon Controls -->
+    <div class="map-top-bar">
+      <span style="font-size:11.5px; font-weight:700; color:#d97706;">📍 Mouza:</span>
+      <select id="mouzaFilter" class="top-select" style="padding:4px 8px; font-size:12px;" onchange="filterMouzaZone(this.value)">
+        <option value="ALL">Entire District (All Mouzas)</option>
+        <option value="IIF">Mouza IIF: Casadona Commercial Core</option>
+        <option value="ECO">Mouza IIE: Wetland & Eco-Cadastre</option>
+        <option value="SUB">Subterranean Utility Corridor</option>
+      </select>
+
+      <span style="font-size:11.5px; font-weight:700; color:#d97706; margin-left:6px;">🔍 Locate ULPIN:</span>
+      <input type="text" id="ulpinSearch" style="padding:4px 8px; font-size:12px; border:1px solid #cbd5e1; border-radius:4px; width:160px;" placeholder="e.g. IIF-04, 3497..." onkeydown="if(event.key==='Enter') executeSearch()">
+      <button class="btn-nav-light" style="padding:4px 10px; font-size:12px; background:#d97706; color:white; border:none;" onclick="executeSearch()">Find</button>
+    </div>
+
+    <!-- Left Metadata Panel Overlay -->
+    <div id="metaCard">
+      <h3 id="panelTitle">2D Cadastral Property Map</h3>
+      <p class="subtitle" id="panelSub">Sector V / New Town Land Revenue Records</p>
+
+      <div class="legend-bar" id="legendContainer"></div>
+      <div id="parcelDetails"></div>
+
+      <button id="btnReset2D" class="btn-toggle" onclick="resetTo2DView()">← Back to 2D Cadastral Map</button>
+    </div>
+
+    <div id="cesiumContainer"></div>
+  </div>
+
+  <!-- Landmark Location Caption -->
+  <div id="landmarkCaption">
+    📍 <span id="dashLandmarkText">Victoria Memorial & Howrah Bridge, Kolkata</span> | <strong>SIH VOID VERSOR</strong>
+  </div>
+
+  <script>
+    // URL Role Parsing & Robust Alias Mapping
+    const urlParams = new URLSearchParams(window.location.search);
+    const rawRole = (urlParams.get('role') || 'citizen').toLowerCase();
+
+    let userRole = 'citizen';
+    if (['govt', 'dept_officer', 'department_officer', 'admin', 'official'].includes(rawRole)) {
+      userRole = 'dept_officer';
+    } else if (['enquiry_officer', 'enquiry', 'inspector'].includes(rawRole)) {
+      userRole = 'enquiry_officer';
+    } else if (['operator', 'kmc', 'municipal'].includes(rawRole)) {
+      userRole = 'operator';
+    } else {
+      userRole = 'citizen';
+    }
+
+    const roleConfig = {
+      citizen: {
+        badgeText: '👤 Citizen Portal',
+        className: 'role-citizen',
+        title: 'Citizen / Family Member',
+        widget: `
+          <button class="btn-action btn-claim" onclick="switchView('map')">🔍 Locate My Land Parcel on 3D Map</button>
+          <button class="btn-action btn-report" onclick="alert('Redirecting to Citizen Grievance Portal...')">✍️ File Strata Title Grievance</button>
+        `
+      },
+      enquiry_officer: {
+        badgeText: '🔍 Enquiry Officer',
+        className: 'role-enquiry',
+        title: 'Authorised Enquiry Officer',
+        widget: `
+          <button class="btn-action btn-report" onclick="switchView('map')">🔍 Inspect Discrepancy Map</button>
+          <button class="btn-action btn-cad" onclick="alert('Exporting Dispute Queue Report...')">📄 Export Dispute Queue Report</button>
+        `
+      },
+      operator: {
+        badgeText: '⚙️ KMC Operator',
+        className: 'role-operator',
+        title: 'KMC Municipal Operator',
+        widget: `
+          <button class="btn-action btn-tax" onclick="switchView('map')">💳 Process Property Tax Clearances</button>
+          <button class="btn-action btn-cad" onclick="alert('Launching Strata Vectorizer...')">📐 Vectorize CAD Floorplan</button>
+        `
+      },
+      dept_officer: {
+        badgeText: '🏛️ Dept Officer (Full Admin)',
+        className: 'role-dept',
+        title: 'Senior Department Officer',
+        widget: `
+          <button class="btn-action btn-notice" onclick="switchView('map')">⚖️ Issue Section 217 Violation Orders</button>
+          <button class="btn-action btn-cad" onclick="switchView('map')">📐 Export AutoCAD 3D Mesh (.DXF)</button>
+        `
+      }
+    };
+
+    // Alias map pointers
+    roleConfig['govt'] = roleConfig['dept_officer'];
+    roleConfig['department_officer'] = roleConfig['dept_officer'];
+    roleConfig['enquiry'] = roleConfig['enquiry_officer'];
+    roleConfig['kmc'] = roleConfig['operator'];
+
+    const activeRoleConfig = roleConfig[userRole] || roleConfig['citizen'];
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const roleBadge = document.getElementById('roleBadge');
+      if (roleBadge) {
+        roleBadge.className = `role-banner ${activeRoleConfig.className}`;
+        roleBadge.innerText = activeRoleConfig.badgeText;
+      }
+
+      const welcomeTitle = document.getElementById('dashWelcomeTitle');
+      if (welcomeTitle) welcomeTitle.innerText = `Welcome, ${activeRoleConfig.title}`;
+
+      const widgetTitle = document.getElementById('roleWidgetTitle');
+      if (widgetTitle) widgetTitle.innerText = `⚡ ${activeRoleConfig.title} Actions`;
+
+      const widgetContent = document.getElementById('roleWidgetContent');
+      if (widgetContent) widgetContent.innerHTML = activeRoleConfig.widget;
+    });
+
+    // View Switching (Dashboard vs 3D Map)
+    function switchView(viewName) {
+      const dashView = document.getElementById('dashboardView');
+      const mapView = document.getElementById('cesiumViewContainer');
+      const tabDash = document.getElementById('tabDash');
+      const tabMap = document.getElementById('tabMap');
+
+      if (viewName === 'map') {
+        dashView.classList.remove('active');
+        mapView.style.display = 'block';
+        tabDash.classList.remove('active');
+        tabMap.classList.add('active');
+
+        if (!window.cesiumInitialized) {
+          try {
+            initCesiumViewer();
+          } catch(e) {
+            console.warn('Cesium initialization notice:', e);
+          }
+          window.cesiumInitialized = true;
+        }
+      } else {
+        mapView.style.display = 'none';
+        dashView.classList.add('active');
+        tabMap.classList.remove('active');
+        tabDash.classList.add('active');
+      }
+    }
+
+    // Instant Logout Reset Fix
+    function executeLogout() {
+      sessionStorage.clear();
+      window.location.href = 'index.html';
+    }
+
+    function showPermissionsInfo() {
+      alert(`Role Authorization: ${activeRoleConfig.title}\nSystem Scope: ISO 19152 Cadastral Spatial Twin`);
+    }
+
+    // Landmark Slideshow Logic
+    const dashSlides = document.querySelectorAll('.dashboard-slide');
+    const dashLandmarkText = document.getElementById('dashLandmarkText');
+    let dashCurrentSlide = 0;
+    let isSlideshowActive = true;
+
+    function nextDashSlide() {
+      if (!isSlideshowActive || !dashSlides.length) return;
+      dashSlides[dashCurrentSlide].classList.remove('active');
+      dashCurrentSlide = (dashCurrentSlide + 1) % dashSlides.length;
+      dashSlides[dashCurrentSlide].classList.add('active');
+      const name = dashSlides[dashCurrentSlide].getAttribute('data-landmark');
+      if (dashLandmarkText && name) dashLandmarkText.innerText = name;
+    }
+    setInterval(nextDashSlide, 5000);
+
+    function toggleLandmarkSlideshow() {
+      const slideshowElem = document.getElementById('landmarkSlideshow');
+      const btn = document.getElementById('btnToggleSlideshow');
+      isSlideshowActive = !isSlideshowActive;
+
+      if (isSlideshowActive) {
+        slideshowElem.style.opacity = '1';
+        btn.innerHTML = "🖼️ Landmark Backdrop";
+      } else {
+        slideshowElem.style.opacity = '0';
+        btn.innerHTML = "🛰️ Plain Backdrop";
+      }
+    }
+
+    // Global Cesium & Data Source State
+    let viewer = null;
+    let district2DSource = null;
+    let dynamic3DGroup = [];
+    let is3DMode = false;
+    let currentSelectedUnitData = null;
+    let residentDatabase = {};
+
+    fetch('datasets/resident_registry.json')
+      .then(r => r.json())
+      .then(d => { residentDatabase = d; })
+      .catch(err => console.warn('Resident database load deferred:', err));
+
+    // ================= 1. MOUZA SEGMENTATION FILTER =================
+    window.filterMouzaZone = function(zoneKey) {
+      // Sync dropdown selections across top nav and map ribbon
+      const hSelect = document.getElementById('headerMouzaFilter');
+      const mSelect = document.getElementById('mouzaFilter');
+      if (hSelect) hSelect.value = zoneKey;
+      if (mSelect) mSelect.value = zoneKey;
+
+      if (!district2DSource) {
+        // If map viewer is not initialized yet, switch to map view tab!
+        switchView('map');
+        return;
+      }
+
+      if (is3DMode) resetTo2DView();
+
+      const ents = district2DSource.entities.values;
+      const matched = [];
+
+      for (let i = 0; i < ents.length; i++) {
+        const ent = ents[i];
+        const p = ent.properties;
+        const pid = p.parcel_id ? p.parcel_id.getValue() : "";
+        const isSub = p.is_subsurface ? p.is_subsurface.getValue() : false;
+        const etype = p.entity_type ? p.entity_type.getValue() : "";
+
+        let match = false;
+        if (zoneKey === "ALL") {
+          match = true;
+        } else if (zoneKey === "IIF") {
+          match = (pid.includes("IIF") || pid.includes("350") || pid.includes("349") || etype === "mother_parcel");
+        } else if (zoneKey === "ECO") {
+          match = (etype === "water_body" || etype === "vacant_land");
+        } else if (zoneKey === "SUB") {
+          match = isSub;
+        }
+
+        ent.show = match;
+        if (match) matched.push(ent);
+      }
+
+      if (matched.length > 0 && viewer) {
+        viewer.flyTo(matched, {
+          duration: 1.5,
+          offset: new Cesium.HeadingPitchRange(0, Cesium.Math.toRadians(-75), zoneKey === "ALL" ? 1100 : 500)
+        });
+      }
+    };
+
+    // ================= 2. GLOBAL ULPIN SEARCH =================
+    window.executeSearch = function() {
+      const inputElem = document.getElementById('ulpinSearch');
+      if (!inputElem) return;
+      const query = inputElem.value.trim().toUpperCase();
+      if (!query || !district2DSource) return;
+
+      const ents = district2DSource.entities.values;
+      let targetEntity = null;
+
+      for (let i = 0; i < ents.length; i++) {
+        const ent = ents[i];
+        const p = ent.properties;
+        const pid = p.parcel_id ? p.parcel_id.getValue().toUpperCase() : "";
+        const name = p.name ? p.name.getValue().toUpperCase() : "";
+
+        if (pid.includes(query) || name.includes(query)) {
+          targetEntity = ent;
+          break;
+        }
+      }
+
+      if (targetEntity) {
+        switchView('map');
+        targetEntity.show = true;
+        if (viewer) {
+          viewer.flyTo(targetEntity, {
+            duration: 1.5,
+            offset: new Cesium.HeadingPitchRange(0, Cesium.Math.toRadians(-60), 350)
+          }).then(() => {
+            const p = targetEntity.properties;
+            if (p.is_subsurface && p.is_subsurface.getValue()) {
+              extrudeAllSubsurfaceUtilities(targetEntity);
+            } else if (p.is_building && p.is_building.getValue()) {
+              extrudeBuildingTo3D(targetEntity);
+            }
+          });
+        }
+      } else {
+        alert(`No cadastral parcel matching "${query}" located in SIH VOID VERSOR jurisdiction.`);
+      }
+    };
+
+    // ================= 3. MUNICIPAL AUDIT CERTIFICATE GENERATOR =================
+    window.generateAuditCertificate = function() {
+      if (!currentSelectedUnitData) {
+        alert("Select a 3D strata unit first to generate its official audit certificate.");
+        return;
+      }
+
+      const d = currentSelectedUnitData;
+      const isRed = (d.status === "RED");
+      const isOrange = (d.status === "ORANGE");
+
+      const title = isRed 
+        ? "MUNICIPAL NOTICE: UNAUTHORIZED STRATA VIOLATION (SECTION 217)" 
+        : (isOrange ? "PROVISIONAL REVENUE INCONSISTENCY NOTICE" : "STATUTORY 3D CADASTRAL TITLE & AUDIT CLEARANCE");
+
+      const stampColor = isRed ? "#dc2626" : (isOrange ? "#d97706" : "#059669");
+      const stampText = isRed ? "VIOLATION DETECTED" : (isOrange ? "AUDIT PENDING" : "SANCTIONED & VERIFIED");
+
+      const reportHtml = `
+        <!DOCTYPE html>
+        <html>
+        <head>
+          <title>${title}</title>
+          <style>
+            body { font-family: "Segoe UI", Arial, sans-serif; padding: 40px; color: #0f172a; line-height: 1.6; max-width: 800px; margin: auto; background: #ffffff; }
+            .header { text-align: center; border-bottom: 3px double #0f172a; padding-bottom: 16px; margin-bottom: 24px; }
+            .header h1 { font-size: 22px; margin: 0; text-transform: uppercase; color: #d97706; font-weight: 900; }
+            .header p { margin: 4px 0 0 0; font-size: 13px; color: #475569; }
+            .stamp-badge {
+              float: right; border: 3px solid ${stampColor}; color: ${stampColor};
+              font-weight: 900; font-size: 14px; padding: 8px 16px; text-transform: uppercase;
+              transform: rotate(-4deg); border-radius: 6px; letter-spacing: 1px;
+            }
+            .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 24px 0; font-size: 13.5px; }
+            .grid div span { color: #64748b; font-size: 11.5px; display: block; text-transform: uppercase; font-weight: 700; }
+            .audit-box {
+              background: #f8fafc; border: 1px solid #cbd5e1; padding: 16px;
+              border-radius: 8px; margin: 24px 0; font-size: 13px;
+            }
+            .table { width: 100%; border-collapse: collapse; margin-top: 16px; font-size: 12.5px; }
+            .table th, .table td { border: 1px solid #cbd5e1; padding: 10px; text-align: left; }
+            .table th { background: #f1f5f9; color: #475569; font-weight: 700; }
+            .footer { margin-top: 40px; display: flex; justify-content: space-between; font-size: 12px; color: #64748b; border-top: 1px solid #e2e8f0; padding-top: 16px; }
+            @media print { .btn-print { display: none; } }
+          </style>
+        </head>
+        <body>
+          <div class="stamp-badge">${stampText}</div>
+          <div class="header">
+            <h1>SIH VOID VERSOR • Land Revenue Administration</h1>
+            <p>ISO 19152 (LADM) Compliant 3D Cadastral Digital Twin System</p>
+          </div>
+
+          <h2 style="font-size: 17px; color: ${stampColor}; font-weight: 800;">${title}</h2>
+          <p style="font-size: 13px; color: #475569;"><b>Official Reference:</b> CAD-REV/2026/SIH-VV/${d.ulpin.replace(/[:\/\\ ]/g, "-")}</p>
+
+          <div class="grid">
+            <div><span>3D ULPIN IDENTIFIER</span><b>${d.ulpin}</b></div>
+            <div><span>STRUCTURE NAME</span><b>${d.buildingName}</b></div>
+            <div><span>STRATA FLOOR & UNIT</span><b>${d.floorLabel} (${d.unitLabel})</b></div>
+            <div><span>VERTICAL ELEVATION DATUM</span><b>${d.baseH.toFixed(2)}m to ${d.extrudedH.toFixed(2)}m (Z-Datum)</b></div>
+            <div><span>REGISTERED CLAIMANT</span><b>${d.resident.occupant_name}</b></div>
+            <div><span>MASKED IDENTITY HASH</span><b>${d.resident.masked_aadhaar}</b></div>
+            <div><span>CARPET AREA</span><b>${d.resident.carpet_area_sqft} sq.ft</b></div>
+            <div><span>MUNICIPAL TAX CLEARANCE</span><b style="color:${d.resident.tax_clearance === 'PAID' ? '#059669' : '#dc2626'}">${d.resident.tax_clearance}</b></div>
+          </div>
+
+          <div class="audit-box">
+            <b>Multi-Sensor Audit Determination:</b><br>
+            ${d.action}<br>
+            <span style="font-size: 11.5px; color: #475569;">Volume Discrepancy Variance: +${d.variance}% | Multi-Sensor Consensus: ${d.confidence.toFixed(1)}%</span>
+          </div>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Verification Source</th>
+                <th>Observed Parameter</th>
+                <th>Sanctioned Master Plan</th>
+                <th>Alignment Verdict</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Airborne LiDAR Survey</td>
+                <td>Elevation: ${d.extrudedH.toFixed(1)}m</td>
+                <td>Sanctioned: ${(d.baseH + (isRed ? -3.2 : 0)).toFixed(1)}m</td>
+                <td style="color:${isRed ? '#dc2626' : '#059669'}; font-weight:700;">${isRed ? 'BREACH (+28%)' : 'COMPLIANT'}</td>
+              </tr>
+              <tr>
+                <td>AI Floorplan Vectorizer</td>
+                <td>Strata Boundary: Orthogonal OBB</td>
+                <td>Sanctioned CAD Floorplan</td>
+                <td style="color:#059669; font-weight:700;">MATCH (91.8% mIoU)</td>
+              </tr>
+              <tr>
+                <td>Revenue Registry</td>
+                <td>Tax Clearance: ${d.resident.tax_clearance}</td>
+                <td>Financial Year 2026 Assessment</td>
+                <td style="color:${d.resident.tax_clearance === 'PAID' ? '#059669' : '#d97706'}; font-weight:700;">${d.resident.tax_clearance}</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="footer">
+            <div>Digitally certified under the SIH VOID VERSOR Framework.<br>Verification Authority: Land Revenue Division.</div>
+            <div style="text-align: right;"><button class="btn-print" onclick="window.print()" style="padding: 7px 16px; background:#0284c7; color:white; border:none; border-radius:4px; font-weight:700; cursor:pointer;">🖨️ Print / Save PDF</button></div>
+          </div>
+        </body>
+        </html>
+      `;
+
+      const w = window.open("", "_blank");
+      w.document.write(reportHtml);
+      w.document.close();
+    };
+
+    // ================= 4. AUTOCAD 3D MESH (.DXF) EXPORTER =================
+    window.exportCurrentUnitToCAD = function() {
+      if (!currentSelectedUnitData || !currentSelectedUnitData.hierarchy) {
+        alert("Select a 3D strata unit first to export its CAD geometry.");
+        return;
+      }
+
+      const d = currentSelectedUnitData;
+      const positions = d.hierarchy.positions;
+      if (!positions || positions.length < 3) return;
+
+      let cx = 0, cy = 0;
+      const local2D = [];
+      for (let i = 0; i < positions.length; i++) {
+        const carto = Cesium.Cartographic.fromCartesian(positions[i]);
+        const lon = Cesium.Math.toDegrees(carto.longitude);
+        const lat = Cesium.Math.toDegrees(carto.latitude);
+        const mx = lon * 102790.0;
+        const my = lat * 111320.0;
+        local2D.push({ x: mx, y: my });
+        cx += mx; cy += my;
+      }
+      cx /= positions.length;
+      cy /= positions.length;
+
+      const pts = local2D.map(p => ({ x: +(p.x - cx).toFixed(3), y: +(p.y - cy).toFixed(3) }));
+      const z0 = +d.baseH.toFixed(3);
+      const z1 = +d.extrudedH.toFixed(3);
+
+      let dxf = "0\nSECTION\n2\nHEADER\n0\nENDSEC\n0\nSECTION\n2\nENTITIES\n";
+
+      // Bottom face
+      for (let i = 1; i < pts.length - 1; i++) {
+        dxf += `0\n3DFACE\n8\nCADASTRAL_3D_STRATA\n`;
+        dxf += `10\n${pts[0].x}\n20\n${pts[0].y}\n30\n${z0}\n`;
+        dxf += `11\n${pts[i].x}\n21\n${pts[i].y}\n31\n${z0}\n`;
+        dxf += `12\n${pts[i+1].x}\n22\n${pts[i+1].y}\n32\n${z0}\n`;
+        dxf += `13\n${pts[i+1].x}\n23\n${pts[i+1].y}\n33\n${z0}\n`;
+      }
+      // Top face
+      for (let i = 1; i < pts.length - 1; i++) {
+        dxf += `0\n3DFACE\n8\nCADASTRAL_3D_STRATA\n`;
+        dxf += `10\n${pts[0].x}\n20\n${pts[0].y}\n30\n${z1}\n`;
+        dxf += `11\n${pts[i].x}\n21\n${pts[i].y}\n31\n${z1}\n`;
+        dxf += `12\n${pts[i+1].x}\n22\n${pts[i+1].y}\n32\n${z1}\n`;
+        dxf += `13\n${pts[i+1].x}\n23\n${pts[i+1].y}\n33\n${z1}\n`;
+      }
+      // Side quads
+      for (let i = 0; i < pts.length; i++) {
+        const p1 = pts[i];
+        const p2 = pts[(i + 1) % pts.length];
+        dxf += `0\n3DFACE\n8\nCADASTRAL_3D_STRATA\n`;
+        dxf += `10\n${p1.x}\n20\n${p1.y}\n30\n${z0}\n`;
+        dxf += `11\n${p2.x}\n21\n${p2.y}\n31\n${z0}\n`;
+        dxf += `12\n${p2.x}\n22\n${p2.y}\n32\n${z1}\n`;
+        dxf += `13\n${p1.x}\n23\n${p1.y}\n33\n${z1}\n`;
+      }
+
+      dxf += "0\nENDSEC\n0\nEOF\n";
+
+      const blob = new Blob([dxf], { type: "application/dxf" });
+      const link = document.createElement("a");
+      const safeCode = d.ulpin.replace(/[:\/\\ ]/g, "_");
+      link.href = URL.createObjectURL(blob);
+      link.download = `${safeCode}_AutoCAD.dxf`;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    };
+
+    // Setup Map Legend
+    const legendContainer = document.getElementById('legendContainer');
+    if (legendContainer) {
+      legendContainer.innerHTML = `
+        <span class="legend-pill"><span class="dot" style="background:#16a34a;"></span> Green: Verified</span>
+        <span class="legend-pill"><span class="dot" style="background:#dc2626;"></span> Red: Mismatch</span>
+        <span class="legend-pill"><span class="dot" style="background:#d97706;"></span> Orange: Unclaimed</span>
+        <span class="legend-pill"><span class="dot" style="background:#0284c7;"></span> Water Body</span>
+        <span class="legend-pill"><span class="dot" style="background:#9333ea;"></span> Metro (-14m)</span>
+      `;
+    }
+
+    function initCesiumViewer() {
+      if (typeof Cesium === 'undefined') return;
+
+      viewer = new Cesium.Viewer('cesiumContainer', {
+        imageryProvider: new Cesium.UrlTemplateImageryProvider({
+          url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+          maximumLevel: 19
+        }),
+        infoBox: false, selectionIndicator: false, baseLayerPicker: false,
+        geocoder: false, homeButton: false, sceneModePicker: false,
+        navigationHelpButton: false, animation: false, timeline: false, fullscreenButton: false
+      });
+
+      viewer.scene.globe.translucency.enabled = false;
+      viewer.scene.globe.baseColor = Cesium.Color.BLACK;
+      viewer.scene.screenSpaceCameraController.enableCollisionDetection = false;
+
+      // Load 2D Parcels
+      Cesium.GeoJsonDataSource.load('datasets/local_district_2d.geojson', { clampToGround: true }).then(ds => {
+        district2DSource = ds;
+        viewer.dataSources.add(ds);
+
+        const ents = ds.entities.values;
+        for (let i = 0; i < ents.length; i++) {
+          const ent = ents[i];
+          const p = ent.properties;
+          const isPlot = p.is_plot_boundary ? p.is_plot_boundary.getValue() : false;
+          const isSub = p.is_subsurface ? p.is_subsurface.getValue() : false;
+          const etype = p.entity_type ? p.entity_type.getValue() : "building";
+          let hex = p.fill_color.getValue();
+
+          if (isPlot) {
+            ent.polygon.material = Cesium.Color.fromCssColorString('#facc15').withAlpha(0.08);
+            ent.polygon.outline = true;
+            ent.polygon.outlineColor = Cesium.Color.fromCssColorString('#facc15').withAlpha(0.95);
+            ent.polygon.outlineWidth = 2.0;
+          } else if (isSub) {
+            ent.polygon.material = Cesium.Color.fromCssColorString(hex).withAlpha(0.85);
+            ent.polygon.outline = true;
+            ent.polygon.outlineColor = Cesium.Color.fromCssColorString('#facc15');
+            ent.polygon.outlineWidth = 2.5;
+          } else if (etype === "water_body") {
+            ent.polygon.material = Cesium.Color.fromCssColorString('#0284c7').withAlpha(0.7);
+            ent.polygon.outline = true;
+            ent.polygon.outlineColor = Cesium.Color.fromCssColorString('#facc15');
+            ent.polygon.outlineWidth = 2.0;
+          } else if (etype === "vacant_land") {
+            ent.polygon.material = Cesium.Color.fromCssColorString('#d97706').withAlpha(0.65);
+            ent.polygon.outline = true;
+            ent.polygon.outlineColor = Cesium.Color.fromCssColorString('#facc15');
+            ent.polygon.outlineWidth = 2.0;
+          } else {
+            ent.polygon.material = Cesium.Color.fromCssColorString(hex).withAlpha(0.75);
+            ent.polygon.outline = true;
+            ent.polygon.outlineColor = Cesium.Color.fromCssColorString('#facc15');
+            ent.polygon.outlineWidth = 2.0;
+          }
+        }
+
+        viewer.flyTo(ds, {
+          duration: 1.5,
+          offset: new Cesium.HeadingPitchRange(0, Cesium.Math.toRadians(-89), 1100)
+        });
+      });
+
+      setupInteractionHandler();
+    }
+
+    function setupInteractionHandler() {
+      if (!viewer) return;
+      const handler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas);
+      handler.setInputAction(function(click) {
+        const picked = viewer.scene.pick(click.position);
+        const panel = document.getElementById('parcelDetails');
+
+        if (!Cesium.defined(picked) || !picked.id || !picked.id.properties) return;
+        const p = picked.id.properties;
+
+        if (!is3DMode) {
+          const isPlot = p.is_plot_boundary ? p.is_plot_boundary.getValue() : false;
+          const isSub = p.is_subsurface ? p.is_subsurface.getValue() : false;
+          const etype = p.entity_type ? p.entity_type.getValue() : "building";
+
+          if (etype === "vacant_land") {
+            panel.innerHTML = `
+              <div><span class="badge-status status-orange">🟧 DETECTED UNCLAIMED</span></div>
+              <b>2D ULPIN:</b> <code class="code-pill">${p.parcel_id.getValue()}</code><br>
+              <b>Entity:</b> ${p.name.getValue()}<br>
+              <b>Category:</b> Vacant Commercial Plot<br>
+              <div class="action-group">
+                <button class="btn-action btn-claim" onclick="alert('Claim submitted for ${p.parcel_id.getValue()}')">✍️ Submit Citizen Title Claim</button>
+              </div>
+            `;
+            return;
+          }
+
+          if (isSub) {
+            extrudeAllSubsurfaceUtilities(picked.id);
+            return;
+          }
+
+          extrudeBuildingTo3D(picked.id);
+        } else if (p.is_3d_unit) {
+          const ulpin = p['3D_ULPIN'].getValue();
+          const conf = p.confidence_score ? p.confidence_score.getValue() : 96.5;
+          const status = p.audit_state ? p.audit_state.getValue() : "GREEN";
+          const resData = residentDatabase[ulpin] || { occupant_name: "Casadona IT Enterprise", masked_aadhaar: "XXXX-9482", carpet_area_sqft: 930, tax_clearance: "PAID" };
+
+          currentSelectedUnitData = {
+            ulpin: ulpin, buildingName: p.building_name.getValue(), floorLabel: p.floor_label.getValue(), unitLabel: p.unit_label.getValue(),
+            baseH: p.base_h.getValue(), extrudedH: p.extruded_h.getValue(), confidence: conf, status: status, action: p.action.getValue(), variance: p.variance.getValue(), resident: resData,
+            hierarchy: picked.id.polygon ? picked.id.polygon.hierarchy.getValue(Cesium.JulianDate.now()) : null
+          };
+
+          panel.innerHTML = `
+            <b>3D ULPIN:</b> <code class="code-pill">${ulpin}</code><br>
+            <b>Structure:</b> ${p.building_name.getValue()}<br>
+            <b>Unit:</b> ${p.floor_label.getValue()} (${p.unit_label.getValue()})<br>
+            <b>Claimant:</b> <b>${resData.occupant_name}</b><br>
+            <b>Tax Clearance:</b> <b style="color:${resData.tax_clearance === 'PAID' ? '#16a34a' : '#dc2626'};">${resData.tax_clearance}</b><br>
+            <div class="action-group">
+              <button class="btn-action btn-claim" onclick="alert('Claim Verified for ${ulpin}')">✓ Verify Strata Claim</button>
+              <button class="btn-action btn-report" onclick="generateAuditCertificate()">📄 Generate Official Audit Certificate</button>
+              <button class="btn-action btn-cad" onclick="exportCurrentUnitToCAD()">📐 Export 3D Unit to CAD (.DXF)</button>
+            </div>
+          `;
+        }
+      }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
+    }
+
+    // Geometry Helpers & Extrusion
+    function geojsonToHierarchy(geometry) {
+      if (!geometry || !geometry.coordinates) return null;
+      const exteriorRing = (geometry.type === "MultiPolygon") ? geometry.coordinates[0][0] : geometry.coordinates[0];
+      return new Cesium.PolygonHierarchy(Cesium.Cartesian3.fromDegreesArray(exteriorRing.flat()));
+    }
+
+    function extrudeBuildingTo3D(entity) {
+      if (!viewer) return;
+      is3DMode = true;
+      clearDynamic3D();
+
+      const p = entity.properties;
+      const name = p.name.getValue();
+      const parcelId = p.parcel_id.getValue();
+      const levels = p.levels.getValue();
+      const GROUND_ELEVATION = 11.5;
+      const FLOOR_HEIGHT = 3.2;
+
+      const rawUnits = p.units_2d ? p.units_2d.getValue() : null;
+      let unitHierarchies = [];
+      if (rawUnits && Array.isArray(rawUnits) && rawUnits.length > 0) {
+        for (let u = 0; u < rawUnits.length; u++) {
+          const h = geojsonToHierarchy(rawUnits[u]);
+          if (h) unitHierarchies.push(h);
+        }
+      }
+      if (unitHierarchies.length === 0) {
+        unitHierarchies = [entity.polygon.hierarchy.getValue(Cesium.JulianDate.now())];
+      }
+
+      for (let floor = 1; floor <= levels; floor++) {
+        const baseH = GROUND_ELEVATION + ((floor - 1) * FLOOR_HEIGHT);
+        const topH = GROUND_ELEVATION + (floor * FLOOR_HEIGHT);
+
+        for (let u = 0; u < unitHierarchies.length; u++) {
+          const flatUlpin = `${parcelId}:T1-F${floor.toString().padStart(2, '0')}-U${(u+1).toString().padStart(2, '0')}`;
+          const flatEntity = viewer.entities.add({
+            polygon: {
+              hierarchy: unitHierarchies[u], height: baseH, extrudedHeight: topH,
+              material: Cesium.Color.fromCssColorString('#16a34a').withAlpha(0.65),
+              outline: true, outlineColor: Cesium.Color.fromCssColorString('#facc15')
+            },
+            properties: {
+              is_3d_unit: true, '3D_ULPIN': flatUlpin, building_name: name,
+              floor_label: `Storey Level ${floor}`, unit_label: `Unit ${u+1}`,
+              base_h: baseH, extruded_h: topH, variance: 0.6, confidence_score: 98.2, audit_state: 'GREEN', action: 'Verified Match'
+            }
+          });
+          dynamic3DGroup.push(flatEntity);
+        }
+      }
+
+      if (district2DSource) district2DSource.show = false;
+      document.getElementById('panelTitle').innerText = "3D Strata Unit Extrusion";
+      document.getElementById('btnReset2D').style.display = "block";
+
+      viewer.flyTo(dynamic3DGroup, { duration: 1.8, offset: new Cesium.HeadingPitchRange(Cesium.Math.toRadians(35), Cesium.Math.toRadians(-35), 180) });
+    }
+
+    function clearDynamic3D() {
+      if (!viewer) return;
+      for (let i = 0; i < dynamic3DGroup.length; i++) viewer.entities.remove(dynamic3DGroup[i]);
+      dynamic3DGroup = [];
+    }
+
+    window.resetTo2DView = function() {
+      if (!viewer) return;
+      is3DMode = false;
+      clearDynamic3D();
+      if (district2DSource) district2DSource.show = true;
+      document.getElementById('panelTitle').innerText = "2D Cadastral Property Map";
+      document.getElementById('btnReset2D').style.display = "none";
+      viewer.flyTo(district2DSource, { duration: 1.5, offset: new Cesium.HeadingPitchRange(0, Cesium.Math.toRadians(-89), 1100) });
+    };
+  </script>
+</body>
+</html>

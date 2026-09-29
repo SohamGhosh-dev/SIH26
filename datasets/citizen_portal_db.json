@@ -1,0 +1,1775 @@
+{
+  "WB-KOL-PLOT-3507": {
+    "plot_id": "WB-KOL-PLOT-3507",
+    "property_name": "Mani Casadona Parking Lot",
+    "declared_owner": "Priyanka Dutta",
+    "declared_levels": 7,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2015
+  },
+  "WB-KOL-PLOT-IIF-04": {
+    "plot_id": "WB-KOL-PLOT-IIF-04",
+    "property_name": "Mani Casadona Main Tower",
+    "declared_owner": "Mani Square Ltd & Casadona Group",
+    "declared_levels": 15,
+    "declared_use": "Commercial IT / ITES",
+    "self_reported_status": "DISPUTE_NOTICE_ISSUED",
+    "deed_registration_year": 2018
+  },
+  "WB-KOL-PLOT-0705": {
+    "plot_id": "WB-KOL-PLOT-0705",
+    "property_name": "Mani Casadona West Tower",
+    "declared_owner": "Sneha Roy",
+    "declared_levels": 7,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2017
+  },
+  "WB-KOL-PLOT-1273": {
+    "plot_id": "WB-KOL-PLOT-1273",
+    "property_name": "Structure #1273",
+    "declared_owner": "Sourav Mukherjee",
+    "declared_levels": 5,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2018
+  },
+  "WB-KOL-PLOT-1459": {
+    "plot_id": "WB-KOL-PLOT-1459",
+    "property_name": "Structure #1459",
+    "declared_owner": "Debolina Sen",
+    "declared_levels": 5,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2019
+  },
+  "WB-KOL-PLOT-1265": {
+    "plot_id": "WB-KOL-PLOT-1265",
+    "property_name": "Structure #1265",
+    "declared_owner": "Vikram Dutta",
+    "declared_levels": 9,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2020
+  },
+  "WB-KOL-PLOT-1402": {
+    "plot_id": "WB-KOL-PLOT-1402",
+    "property_name": "Structure #1402",
+    "declared_owner": "Sourav Banerjee",
+    "declared_levels": 8,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2021
+  },
+  "WB-KOL-PLOT-1252": {
+    "plot_id": "WB-KOL-PLOT-1252",
+    "property_name": "Structure #1252",
+    "declared_owner": "Amit Mukherjee",
+    "declared_levels": 6,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "DISPUTE_NOTICE_ISSUED",
+    "deed_registration_year": 2022
+  },
+  "WB-KOL-PLOT-1424": {
+    "plot_id": "WB-KOL-PLOT-1424",
+    "property_name": "Structure #1424",
+    "declared_owner": "Debolina Sen",
+    "declared_levels": 6,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2014
+  },
+  "WB-KOL-PLOT-0842": {
+    "plot_id": "WB-KOL-PLOT-0842",
+    "property_name": "Structure #0842",
+    "declared_owner": "Pooja Das",
+    "declared_levels": 6,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2015
+  },
+  "WB-KOL-PLOT-1422": {
+    "plot_id": "WB-KOL-PLOT-1422",
+    "property_name": "Structure #1422",
+    "declared_owner": "Sourav Ghosh",
+    "declared_levels": 4,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2016
+  },
+  "WB-KOL-PLOT-1239": {
+    "plot_id": "WB-KOL-PLOT-1239",
+    "property_name": "Structure #1239",
+    "declared_owner": "Rahul Ghosh",
+    "declared_levels": 7,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2017
+  },
+  "WB-KOL-PLOT-1297": {
+    "plot_id": "WB-KOL-PLOT-1297",
+    "property_name": "Structure #1297",
+    "declared_owner": "Ananya Chatterjee",
+    "declared_levels": 5,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2018
+  },
+  "WB-KOL-PLOT-0800": {
+    "plot_id": "WB-KOL-PLOT-0800",
+    "property_name": "Structure #0800",
+    "declared_owner": "Sourav Dutta",
+    "declared_levels": 6,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2019
+  },
+  "WB-KOL-PLOT-3587": {
+    "plot_id": "WB-KOL-PLOT-3587",
+    "property_name": "Structure #3587",
+    "declared_owner": "Sourav Bose",
+    "declared_levels": 9,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2020
+  },
+  "WB-KOL-PLOT-1451": {
+    "plot_id": "WB-KOL-PLOT-1451",
+    "property_name": "Structure #1451",
+    "declared_owner": "Pooja Sarkar",
+    "declared_levels": 9,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2021
+  },
+  "WB-KOL-PLOT-1369": {
+    "plot_id": "WB-KOL-PLOT-1369",
+    "property_name": "Structure #1369",
+    "declared_owner": "Ananya Mukherjee",
+    "declared_levels": 5,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2022
+  },
+  "WB-KOL-PLOT-2564": {
+    "plot_id": "WB-KOL-PLOT-2564",
+    "property_name": "Structure #2564",
+    "declared_owner": "Rohan Chatterjee",
+    "declared_levels": 6,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2014
+  },
+  "WB-KOL-PLOT-1409": {
+    "plot_id": "WB-KOL-PLOT-1409",
+    "property_name": "Structure #1409",
+    "declared_owner": "Amit Roy",
+    "declared_levels": 9,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2015
+  },
+  "WB-KOL-PLOT-1387": {
+    "plot_id": "WB-KOL-PLOT-1387",
+    "property_name": "Structure #1387",
+    "declared_owner": "Rahul Chatterjee",
+    "declared_levels": 5,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2016
+  },
+  "WB-KOL-PLOT-0732": {
+    "plot_id": "WB-KOL-PLOT-0732",
+    "property_name": "Structure #0732",
+    "declared_owner": "Sneha Bose",
+    "declared_levels": 4,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2017
+  },
+  "WB-KOL-PLOT-0810": {
+    "plot_id": "WB-KOL-PLOT-0810",
+    "property_name": "Structure #0810",
+    "declared_owner": "Pooja Sen",
+    "declared_levels": 4,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2018
+  },
+  "WB-KOL-PLOT-2594": {
+    "plot_id": "WB-KOL-PLOT-2594",
+    "property_name": "Structure #2594",
+    "declared_owner": "Rohan Chatterjee",
+    "declared_levels": 6,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2019
+  },
+  "WB-KOL-PLOT-1561": {
+    "plot_id": "WB-KOL-PLOT-1561",
+    "property_name": "Structure #1561",
+    "declared_owner": "Pooja Sen",
+    "declared_levels": 3,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "DISPUTE_NOTICE_ISSUED",
+    "deed_registration_year": 2020
+  },
+  "WB-KOL-PLOT-0850": {
+    "plot_id": "WB-KOL-PLOT-0850",
+    "property_name": "Structure #0850",
+    "declared_owner": "Ananya Bose",
+    "declared_levels": 8,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2021
+  },
+  "WB-KOL-PLOT-0771": {
+    "plot_id": "WB-KOL-PLOT-0771",
+    "property_name": "Structure #0771",
+    "declared_owner": "Debolina Mukherjee",
+    "declared_levels": 7,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2022
+  },
+  "WB-KOL-PLOT-3501": {
+    "plot_id": "WB-KOL-PLOT-3501",
+    "property_name": "Structure #3501",
+    "declared_owner": "Ananya Mukherjee",
+    "declared_levels": 7,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2014
+  },
+  "WB-KOL-PLOT-0763": {
+    "plot_id": "WB-KOL-PLOT-0763",
+    "property_name": "Structure #0763",
+    "declared_owner": "Sneha Banerjee",
+    "declared_levels": 5,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2015
+  },
+  "WB-KOL-PLOT-1552": {
+    "plot_id": "WB-KOL-PLOT-1552",
+    "property_name": "Structure #1552",
+    "declared_owner": "Sourav Chatterjee",
+    "declared_levels": 8,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2016
+  },
+  "WB-KOL-PLOT-1423": {
+    "plot_id": "WB-KOL-PLOT-1423",
+    "property_name": "Structure #1423",
+    "declared_owner": "Vikram Chatterjee",
+    "declared_levels": 5,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2017
+  },
+  "WB-KOL-PLOT-1544": {
+    "plot_id": "WB-KOL-PLOT-1544",
+    "property_name": "Structure #1544",
+    "declared_owner": "Sourav Roy",
+    "declared_levels": 6,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2018
+  },
+  "WB-KOL-PLOT-1318": {
+    "plot_id": "WB-KOL-PLOT-1318",
+    "property_name": "Structure #1318",
+    "declared_owner": "Vikram Dutta",
+    "declared_levels": 8,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2019
+  },
+  "WB-KOL-PLOT-1450": {
+    "plot_id": "WB-KOL-PLOT-1450",
+    "property_name": "Structure #1450",
+    "declared_owner": "Pooja Ghosh",
+    "declared_levels": 8,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2020
+  },
+  "WB-KOL-PLOT-1264": {
+    "plot_id": "WB-KOL-PLOT-1264",
+    "property_name": "Structure #1264",
+    "declared_owner": "Rohan Ghosh",
+    "declared_levels": 8,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2021
+  },
+  "WB-KOL-PLOT-1308": {
+    "plot_id": "WB-KOL-PLOT-1308",
+    "property_name": "Structure #1308",
+    "declared_owner": "Pooja Bose",
+    "declared_levels": 4,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2022
+  },
+  "WB-KOL-PLOT-1500": {
+    "plot_id": "WB-KOL-PLOT-1500",
+    "property_name": "Structure #1500",
+    "declared_owner": "Rahul Ghosh",
+    "declared_levels": 4,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2014
+  },
+  "WB-KOL-PLOT-0812": {
+    "plot_id": "WB-KOL-PLOT-0812",
+    "property_name": "Structure #0812",
+    "declared_owner": "Sneha Banerjee",
+    "declared_levels": 6,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2015
+  },
+  "WB-KOL-PLOT-3503": {
+    "plot_id": "WB-KOL-PLOT-3503",
+    "property_name": "Structure #3503",
+    "declared_owner": "Rohan Roy",
+    "declared_levels": 9,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2016
+  },
+  "WB-KOL-PLOT-1495": {
+    "plot_id": "WB-KOL-PLOT-1495",
+    "property_name": "Structure #1495",
+    "declared_owner": "Sneha Roy",
+    "declared_levels": 5,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2017
+  },
+  "WB-KOL-PLOT-1515": {
+    "plot_id": "WB-KOL-PLOT-1515",
+    "property_name": "Structure #1515",
+    "declared_owner": "Rahul Banerjee",
+    "declared_levels": 7,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2018
+  },
+  "WB-KOL-PLOT-1533": {
+    "plot_id": "WB-KOL-PLOT-1533",
+    "property_name": "Structure #1533",
+    "declared_owner": "Pooja Das",
+    "declared_levels": 7,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2019
+  },
+  "WB-KOL-PLOT-1353": {
+    "plot_id": "WB-KOL-PLOT-1353",
+    "property_name": "Structure #1353",
+    "declared_owner": "Debolina Dutta",
+    "declared_levels": 7,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2020
+  },
+  "WB-KOL-PLOT-1435": {
+    "plot_id": "WB-KOL-PLOT-1435",
+    "property_name": "Structure #1435",
+    "declared_owner": "Sourav Sarkar",
+    "declared_levels": 5,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2021
+  },
+  "WB-KOL-PLOT-1310": {
+    "plot_id": "WB-KOL-PLOT-1310",
+    "property_name": "Structure #1310",
+    "declared_owner": "Pooja Roy",
+    "declared_levels": 6,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2022
+  },
+  "WB-KOL-PLOT-1253": {
+    "plot_id": "WB-KOL-PLOT-1253",
+    "property_name": "Structure #1253",
+    "declared_owner": "Vikram Chatterjee",
+    "declared_levels": 7,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "DISPUTE_NOTICE_ISSUED",
+    "deed_registration_year": 2014
+  },
+  "WB-KOL-PLOT-3502": {
+    "plot_id": "WB-KOL-PLOT-3502",
+    "property_name": "Structure #3502",
+    "declared_owner": "Priyanka Mukherjee",
+    "declared_levels": 8,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2015
+  },
+  "WB-KOL-PLOT-2500": {
+    "plot_id": "WB-KOL-PLOT-2500",
+    "property_name": "Structure #2500",
+    "declared_owner": "Ananya Banerjee",
+    "declared_levels": 8,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2016
+  },
+  "WB-KOL-PLOT-3500": {
+    "plot_id": "WB-KOL-PLOT-3500",
+    "property_name": "Structure #3500",
+    "declared_owner": "Pooja Chatterjee",
+    "declared_levels": 6,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2017
+  },
+  "WB-KOL-PLOT-3514": {
+    "plot_id": "WB-KOL-PLOT-3514",
+    "property_name": "Structure #3514",
+    "declared_owner": "Rohan Sen",
+    "declared_levels": 8,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2018
+  },
+  "WB-KOL-PLOT-1582": {
+    "plot_id": "WB-KOL-PLOT-1582",
+    "property_name": "Structure #1582",
+    "declared_owner": "Ananya Das",
+    "declared_levels": 8,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2019
+  },
+  "WB-KOL-PLOT-1590": {
+    "plot_id": "WB-KOL-PLOT-1590",
+    "property_name": "Structure #1590",
+    "declared_owner": "Rohan Sarkar",
+    "declared_levels": 4,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2020
+  },
+  "WB-KOL-PLOT-1591": {
+    "plot_id": "WB-KOL-PLOT-1591",
+    "property_name": "Structure #1591",
+    "declared_owner": "Pooja Sen",
+    "declared_levels": 5,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2021
+  },
+  "WB-KOL-PLOT-3516": {
+    "plot_id": "WB-KOL-PLOT-3516",
+    "property_name": "Structure #3516",
+    "declared_owner": "Vikram Mukherjee",
+    "declared_levels": 4,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2022
+  },
+  "WB-KOL-PLOT-1386": {
+    "plot_id": "WB-KOL-PLOT-1386",
+    "property_name": "Structure #1386",
+    "declared_owner": "Sneha Bose",
+    "declared_levels": 4,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2014
+  },
+  "WB-KOL-PLOT-3512": {
+    "plot_id": "WB-KOL-PLOT-3512",
+    "property_name": "Structure #3512",
+    "declared_owner": "Amit Das",
+    "declared_levels": 6,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2015
+  },
+  "WB-KOL-PLOT-3497": {
+    "plot_id": "WB-KOL-PLOT-3497",
+    "property_name": "Structure #3497",
+    "declared_owner": "Rohan Sarkar",
+    "declared_levels": 9,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2016
+  },
+  "WB-KOL-PLOT-3519": {
+    "plot_id": "WB-KOL-PLOT-3519",
+    "property_name": "Structure #3519",
+    "declared_owner": "Pooja Roy",
+    "declared_levels": 7,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2017
+  },
+  "WB-KOL-PLOT-0832": {
+    "plot_id": "WB-KOL-PLOT-0832",
+    "property_name": "Structure #0832",
+    "declared_owner": "Amit Sen",
+    "declared_levels": 8,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2018
+  },
+  "WB-KOL-PLOT-3517": {
+    "plot_id": "WB-KOL-PLOT-3517",
+    "property_name": "Structure #3517",
+    "declared_owner": "Ananya Ghosh",
+    "declared_levels": 5,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2019
+  },
+  "WB-KOL-PLOT-1441": {
+    "plot_id": "WB-KOL-PLOT-1441",
+    "property_name": "Structure #1441",
+    "declared_owner": "Amit Roy",
+    "declared_levels": 5,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2020
+  },
+  "WB-KOL-PLOT-1289": {
+    "plot_id": "WB-KOL-PLOT-1289",
+    "property_name": "Structure #1289",
+    "declared_owner": "Sneha Dutta",
+    "declared_levels": 9,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2021
+  },
+  "WB-KOL-PLOT-1288": {
+    "plot_id": "WB-KOL-PLOT-1288",
+    "property_name": "Structure #1288",
+    "declared_owner": "Sneha Sarkar",
+    "declared_levels": 8,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2022
+  },
+  "WB-KOL-PLOT-0821": {
+    "plot_id": "WB-KOL-PLOT-0821",
+    "property_name": "Structure #0821",
+    "declared_owner": "Ananya Chatterjee",
+    "declared_levels": 9,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2014
+  },
+  "WB-KOL-PLOT-1438": {
+    "plot_id": "WB-KOL-PLOT-1438",
+    "property_name": "Structure #1438",
+    "declared_owner": "Sneha Dutta",
+    "declared_levels": 8,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2015
+  },
+  "WB-KOL-PLOT-0807": {
+    "plot_id": "WB-KOL-PLOT-0807",
+    "property_name": "Structure #0807",
+    "declared_owner": "Debolina Chatterjee",
+    "declared_levels": 7,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2016
+  },
+  "WB-KOL-PLOT-3518": {
+    "plot_id": "WB-KOL-PLOT-3518",
+    "property_name": "Structure #3518",
+    "declared_owner": "Sneha Sarkar",
+    "declared_levels": 6,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2017
+  },
+  "WB-KOL-PLOT-1559": {
+    "plot_id": "WB-KOL-PLOT-1559",
+    "property_name": "Structure #1559",
+    "declared_owner": "Rahul Ghosh",
+    "declared_levels": 9,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2018
+  },
+  "WB-KOL-PLOT-1367": {
+    "plot_id": "WB-KOL-PLOT-1367",
+    "property_name": "Structure #1367",
+    "declared_owner": "Amit Roy",
+    "declared_levels": 9,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2019
+  },
+  "WB-KOL-PLOT-0831": {
+    "plot_id": "WB-KOL-PLOT-0831",
+    "property_name": "Structure #0831",
+    "declared_owner": "Vikram Banerjee",
+    "declared_levels": 7,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2020
+  },
+  "WB-KOL-PLOT-3509": {
+    "plot_id": "WB-KOL-PLOT-3509",
+    "property_name": "Structure #3509",
+    "declared_owner": "Vikram Banerjee",
+    "declared_levels": 9,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2021
+  },
+  "WB-KOL-PLOT-3498": {
+    "plot_id": "WB-KOL-PLOT-3498",
+    "property_name": "Structure #3498",
+    "declared_owner": "Debolina Banerjee",
+    "declared_levels": 4,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2022
+  },
+  "WB-KOL-PLOT-1316": {
+    "plot_id": "WB-KOL-PLOT-1316",
+    "property_name": "Structure #1316",
+    "declared_owner": "Pooja Bose",
+    "declared_levels": 6,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2014
+  },
+  "WB-KOL-PLOT-3499": {
+    "plot_id": "WB-KOL-PLOT-3499",
+    "property_name": "Structure #3499",
+    "declared_owner": "Debolina Dutta",
+    "declared_levels": 5,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2015
+  },
+  "WB-KOL-PLOT-1479": {
+    "plot_id": "WB-KOL-PLOT-1479",
+    "property_name": "Structure #1479",
+    "declared_owner": "Ananya Das",
+    "declared_levels": 7,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2016
+  },
+  "WB-KOL-PLOT-3511": {
+    "plot_id": "WB-KOL-PLOT-3511",
+    "property_name": "Structure #3511",
+    "declared_owner": "Pooja Banerjee",
+    "declared_levels": 5,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2017
+  },
+  "WB-KOL-PLOT-3513": {
+    "plot_id": "WB-KOL-PLOT-3513",
+    "property_name": "Structure #3513",
+    "declared_owner": "Ananya Mukherjee",
+    "declared_levels": 7,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2018
+  },
+  "WB-KOL-PLOT-3510": {
+    "plot_id": "WB-KOL-PLOT-3510",
+    "property_name": "Structure #3510",
+    "declared_owner": "Ananya Roy",
+    "declared_levels": 4,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2019
+  },
+  "WB-KOL-PLOT-3515": {
+    "plot_id": "WB-KOL-PLOT-3515",
+    "property_name": "Structure #3515",
+    "declared_owner": "Rahul Sarkar",
+    "declared_levels": 9,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2020
+  },
+  "WB-KOL-PLOT-1343": {
+    "plot_id": "WB-KOL-PLOT-1343",
+    "property_name": "Structure #1343",
+    "declared_owner": "Pooja Banerjee",
+    "declared_levels": 9,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2021
+  },
+  "WB-KOL-PLOT-2602": {
+    "plot_id": "WB-KOL-PLOT-2602",
+    "property_name": "Structure #2602",
+    "declared_owner": "Priyanka Das",
+    "declared_levels": 8,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2022
+  },
+  "WB-KOL-PLOT-1504": {
+    "plot_id": "WB-KOL-PLOT-1504",
+    "property_name": "Structure #1504",
+    "declared_owner": "Pooja Banerjee",
+    "declared_levels": 8,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2014
+  },
+  "WB-KOL-PLOT-2507": {
+    "plot_id": "WB-KOL-PLOT-2507",
+    "property_name": "Structure #2507",
+    "declared_owner": "Sourav Banerjee",
+    "declared_levels": 9,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2015
+  },
+  "WB-KOL-PLOT-0780": {
+    "plot_id": "WB-KOL-PLOT-0780",
+    "property_name": "Structure #0780",
+    "declared_owner": "Rohan Sarkar",
+    "declared_levels": 4,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2016
+  },
+  "WB-KOL-PLOT-2490": {
+    "plot_id": "WB-KOL-PLOT-2490",
+    "property_name": "Structure #2490",
+    "declared_owner": "Amit Bose",
+    "declared_levels": 4,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2017
+  },
+  "WB-KOL-PLOT-2546": {
+    "plot_id": "WB-KOL-PLOT-2546",
+    "property_name": "Structure #2546",
+    "declared_owner": "Sneha Sen",
+    "declared_levels": 6,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2018
+  },
+  "WB-KOL-PLOT-3472": {
+    "plot_id": "WB-KOL-PLOT-3472",
+    "property_name": "DLF IT Park II",
+    "declared_owner": "Pooja Sen",
+    "declared_levels": 8,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2019
+  },
+  "WB-KOL-PLOT-3808": {
+    "plot_id": "WB-KOL-PLOT-3808",
+    "property_name": "Structure #3808",
+    "declared_owner": "Sneha Chatterjee",
+    "declared_levels": 8,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2020
+  },
+  "WB-KOL-PLOT-0734": {
+    "plot_id": "WB-KOL-PLOT-0734",
+    "property_name": "Structure #0734",
+    "declared_owner": "Rohan Das",
+    "declared_levels": 6,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2021
+  },
+  "WB-KOL-PLOT-0851": {
+    "plot_id": "WB-KOL-PLOT-0851",
+    "property_name": "Structure #0851",
+    "declared_owner": "Rohan Ghosh",
+    "declared_levels": 9,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2022
+  },
+  "WB-KOL-PLOT-2551": {
+    "plot_id": "WB-KOL-PLOT-2551",
+    "property_name": "Structure #2551",
+    "declared_owner": "Amit Mukherjee",
+    "declared_levels": 5,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2014
+  },
+  "WB-KOL-PLOT-3992": {
+    "plot_id": "WB-KOL-PLOT-3992",
+    "property_name": "Webel IT Park",
+    "declared_owner": "Priyanka Dutta",
+    "declared_levels": 6,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2015
+  },
+  "WB-KOL-PLOT-1440": {
+    "plot_id": "WB-KOL-PLOT-1440",
+    "property_name": "Structure #1440",
+    "declared_owner": "Ananya Roy",
+    "declared_levels": 4,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2016
+  },
+  "WB-KOL-PLOT-0846": {
+    "plot_id": "WB-KOL-PLOT-0846",
+    "property_name": "Structure #0846",
+    "declared_owner": "Amit Das",
+    "declared_levels": 4,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2017
+  },
+  "WB-KOL-PLOT-1286": {
+    "plot_id": "WB-KOL-PLOT-1286",
+    "property_name": "Structure #1286",
+    "declared_owner": "Amit Roy",
+    "declared_levels": 6,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2018
+  },
+  "WB-KOL-PLOT-0840": {
+    "plot_id": "WB-KOL-PLOT-0840",
+    "property_name": "Structure #0840",
+    "declared_owner": "Rahul Sen",
+    "declared_levels": 4,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2019
+  },
+  "WB-KOL-PLOT-1216": {
+    "plot_id": "WB-KOL-PLOT-1216",
+    "property_name": "Structure #1216",
+    "declared_owner": "Sourav Bose",
+    "declared_levels": 8,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2020
+  },
+  "WB-KOL-PLOT-1361": {
+    "plot_id": "WB-KOL-PLOT-1361",
+    "property_name": "Structure #1361",
+    "declared_owner": "Rohan Bose",
+    "declared_levels": 9,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2021
+  },
+  "WB-KOL-PLOT-0809": {
+    "plot_id": "WB-KOL-PLOT-0809",
+    "property_name": "Structure #0809",
+    "declared_owner": "Amit Das",
+    "declared_levels": 9,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2022
+  },
+  "WB-KOL-PLOT-1524": {
+    "plot_id": "WB-KOL-PLOT-1524",
+    "property_name": "Structure #1524",
+    "declared_owner": "Sourav Dutta",
+    "declared_levels": 4,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2014
+  },
+  "WB-KOL-PLOT-0817": {
+    "plot_id": "WB-KOL-PLOT-0817",
+    "property_name": "Structure #0817",
+    "declared_owner": "Sneha Dutta",
+    "declared_levels": 5,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2015
+  },
+  "WB-KOL-PLOT-1551": {
+    "plot_id": "WB-KOL-PLOT-1551",
+    "property_name": "Structure #1551",
+    "declared_owner": "Priyanka Ghosh",
+    "declared_levels": 7,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2016
+  },
+  "WB-KOL-PLOT-0841": {
+    "plot_id": "WB-KOL-PLOT-0841",
+    "property_name": "Structure #0841",
+    "declared_owner": "Ananya Sen",
+    "declared_levels": 5,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2017
+  },
+  "WB-KOL-PLOT-0803": {
+    "plot_id": "WB-KOL-PLOT-0803",
+    "property_name": "Structure #0803",
+    "declared_owner": "Rohan Bose",
+    "declared_levels": 9,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2018
+  },
+  "WB-KOL-PLOT-1483": {
+    "plot_id": "WB-KOL-PLOT-1483",
+    "property_name": "Structure #1483",
+    "declared_owner": "Priyanka Sarkar",
+    "declared_levels": 5,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2019
+  },
+  "WB-KOL-PLOT-1325": {
+    "plot_id": "WB-KOL-PLOT-1325",
+    "property_name": "Structure #1325",
+    "declared_owner": "Priyanka Mukherjee",
+    "declared_levels": 9,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2020
+  },
+  "WB-KOL-PLOT-1565": {
+    "plot_id": "WB-KOL-PLOT-1565",
+    "property_name": "Structure #1565",
+    "declared_owner": "Rohan Dutta",
+    "declared_levels": 9,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2021
+  },
+  "WB-KOL-PLOT-1354": {
+    "plot_id": "WB-KOL-PLOT-1354",
+    "property_name": "Structure #1354",
+    "declared_owner": "Sneha Mukherjee",
+    "declared_levels": 8,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2022
+  },
+  "WB-KOL-PLOT-1575": {
+    "plot_id": "WB-KOL-PLOT-1575",
+    "property_name": "Structure #1575",
+    "declared_owner": "Rohan Bose",
+    "declared_levels": 7,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2014
+  },
+  "WB-KOL-PLOT-1254": {
+    "plot_id": "WB-KOL-PLOT-1254",
+    "property_name": "Structure #1254",
+    "declared_owner": "Ananya Sen",
+    "declared_levels": 4,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2015
+  },
+  "WB-KOL-PLOT-1585": {
+    "plot_id": "WB-KOL-PLOT-1585",
+    "property_name": "Structure #1585",
+    "declared_owner": "Pooja Das",
+    "declared_levels": 5,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2016
+  },
+  "WB-KOL-PLOT-0829": {
+    "plot_id": "WB-KOL-PLOT-0829",
+    "property_name": "Structure #0829",
+    "declared_owner": "Pooja Ghosh",
+    "declared_levels": 5,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2017
+  },
+  "WB-KOL-PLOT-1415": {
+    "plot_id": "WB-KOL-PLOT-1415",
+    "property_name": "Structure #1415",
+    "declared_owner": "Sneha Roy",
+    "declared_levels": 9,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2018
+  },
+  "WB-KOL-PLOT-0828": {
+    "plot_id": "WB-KOL-PLOT-0828",
+    "property_name": "Azad Hind Dhaba",
+    "declared_owner": "Sourav Roy",
+    "declared_levels": 4,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2019
+  },
+  "WB-KOL-PLOT-1405": {
+    "plot_id": "WB-KOL-PLOT-1405",
+    "property_name": "Structure #1405",
+    "declared_owner": "Sneha Chatterjee",
+    "declared_levels": 5,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2020
+  },
+  "WB-KOL-PLOT-1399": {
+    "plot_id": "WB-KOL-PLOT-1399",
+    "property_name": "Structure #1399",
+    "declared_owner": "Debolina Banerjee",
+    "declared_levels": 5,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2021
+  },
+  "WB-KOL-PLOT-0755": {
+    "plot_id": "WB-KOL-PLOT-0755",
+    "property_name": "Structure #0755",
+    "declared_owner": "Rohan Roy",
+    "declared_levels": 9,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2022
+  },
+  "WB-KOL-PLOT-0746": {
+    "plot_id": "WB-KOL-PLOT-0746",
+    "property_name": "Structure #0746",
+    "declared_owner": "Ananya Chatterjee",
+    "declared_levels": 6,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2014
+  },
+  "WB-KOL-PLOT-1417": {
+    "plot_id": "WB-KOL-PLOT-1417",
+    "property_name": "Structure #1417",
+    "declared_owner": "Ananya Mukherjee",
+    "declared_levels": 5,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2015
+  },
+  "WB-KOL-PLOT-0726": {
+    "plot_id": "WB-KOL-PLOT-0726",
+    "property_name": "Structure #0726",
+    "declared_owner": "Debolina Sen",
+    "declared_levels": 4,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2016
+  },
+  "WB-KOL-PLOT-0820": {
+    "plot_id": "WB-KOL-PLOT-0820",
+    "property_name": "Peacon Software",
+    "declared_owner": "Sneha Sen",
+    "declared_levels": 8,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2017
+  },
+  "WB-KOL-PLOT-0706": {
+    "plot_id": "WB-KOL-PLOT-0706",
+    "property_name": "Structure #0706",
+    "declared_owner": "Rahul Das",
+    "declared_levels": 8,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2018
+  },
+  "WB-KOL-PLOT-1359": {
+    "plot_id": "WB-KOL-PLOT-1359",
+    "property_name": "Structure #1359",
+    "declared_owner": "Sourav Roy",
+    "declared_levels": 7,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2019
+  },
+  "WB-KOL-PLOT-1522": {
+    "plot_id": "WB-KOL-PLOT-1522",
+    "property_name": "Structure #1522",
+    "declared_owner": "Amit Bose",
+    "declared_levels": 8,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2020
+  },
+  "WB-KOL-PLOT-1429": {
+    "plot_id": "WB-KOL-PLOT-1429",
+    "property_name": "Structure #1429",
+    "declared_owner": "Vikram Chatterjee",
+    "declared_levels": 5,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2021
+  },
+  "WB-KOL-PLOT-1313": {
+    "plot_id": "WB-KOL-PLOT-1313",
+    "property_name": "Structure #1313",
+    "declared_owner": "Priyanka Sarkar",
+    "declared_levels": 9,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2022
+  },
+  "WB-KOL-PLOT-1406": {
+    "plot_id": "WB-KOL-PLOT-1406",
+    "property_name": "Structure #1406",
+    "declared_owner": "Vikram Ghosh",
+    "declared_levels": 6,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2014
+  },
+  "WB-KOL-PLOT-1256": {
+    "plot_id": "WB-KOL-PLOT-1256",
+    "property_name": "Structure #1256",
+    "declared_owner": "Amit Chatterjee",
+    "declared_levels": 6,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2015
+  },
+  "WB-KOL-PLOT-1272": {
+    "plot_id": "WB-KOL-PLOT-1272",
+    "property_name": "Structure #1272",
+    "declared_owner": "Rohan Sarkar",
+    "declared_levels": 4,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2016
+  },
+  "WB-KOL-PLOT-1516": {
+    "plot_id": "WB-KOL-PLOT-1516",
+    "property_name": "Structure #1516",
+    "declared_owner": "Pooja Dutta",
+    "declared_levels": 8,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2017
+  },
+  "WB-KOL-PLOT-1471": {
+    "plot_id": "WB-KOL-PLOT-1471",
+    "property_name": "Structure #1471",
+    "declared_owner": "Rahul Bose",
+    "declared_levels": 5,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2018
+  },
+  "WB-KOL-PLOT-1413": {
+    "plot_id": "WB-KOL-PLOT-1413",
+    "property_name": "Structure #1413",
+    "declared_owner": "Pooja Sen",
+    "declared_levels": 7,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2019
+  },
+  "WB-KOL-PLOT-1491": {
+    "plot_id": "WB-KOL-PLOT-1491",
+    "property_name": "Structure #1491",
+    "declared_owner": "Ananya Banerjee",
+    "declared_levels": 7,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2020
+  },
+  "WB-KOL-PLOT-1462": {
+    "plot_id": "WB-KOL-PLOT-1462",
+    "property_name": "Structure #1462",
+    "declared_owner": "Sourav Dutta",
+    "declared_levels": 8,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2021
+  },
+  "WB-KOL-PLOT-1231": {
+    "plot_id": "WB-KOL-PLOT-1231",
+    "property_name": "Structure #1231",
+    "declared_owner": "Ananya Sen",
+    "declared_levels": 5,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2022
+  },
+  "WB-KOL-PLOT-1301": {
+    "plot_id": "WB-KOL-PLOT-1301",
+    "property_name": "Structure #1301",
+    "declared_owner": "Pooja Das",
+    "declared_levels": 9,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2014
+  },
+  "WB-KOL-PLOT-1303": {
+    "plot_id": "WB-KOL-PLOT-1303",
+    "property_name": "Structure #1303",
+    "declared_owner": "Pooja Ghosh",
+    "declared_levels": 5,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2015
+  },
+  "WB-KOL-PLOT-2525": {
+    "plot_id": "WB-KOL-PLOT-2525",
+    "property_name": "Structure #2525",
+    "declared_owner": "Ananya Roy",
+    "declared_levels": 9,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2016
+  },
+  "WB-KOL-PLOT-1321": {
+    "plot_id": "WB-KOL-PLOT-1321",
+    "property_name": "Structure #1321",
+    "declared_owner": "Rohan Ghosh",
+    "declared_levels": 5,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2017
+  },
+  "WB-KOL-PLOT-1374": {
+    "plot_id": "WB-KOL-PLOT-1374",
+    "property_name": "Structure #1374",
+    "declared_owner": "Debolina Chatterjee",
+    "declared_levels": 4,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2018
+  },
+  "WB-KOL-PLOT-1382": {
+    "plot_id": "WB-KOL-PLOT-1382",
+    "property_name": "Structure #1382",
+    "declared_owner": "Rahul Sen",
+    "declared_levels": 6,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2019
+  },
+  "WB-KOL-PLOT-1233": {
+    "plot_id": "WB-KOL-PLOT-1233",
+    "property_name": "Structure #1233",
+    "declared_owner": "Vikram Bose",
+    "declared_levels": 7,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2020
+  },
+  "WB-KOL-PLOT-1547": {
+    "plot_id": "WB-KOL-PLOT-1547",
+    "property_name": "Structure #1547",
+    "declared_owner": "Vikram Banerjee",
+    "declared_levels": 9,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2021
+  },
+  "WB-KOL-PLOT-1443": {
+    "plot_id": "WB-KOL-PLOT-1443",
+    "property_name": "Structure #1443",
+    "declared_owner": "Sneha Ghosh",
+    "declared_levels": 7,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2022
+  },
+  "WB-KOL-PLOT-1482": {
+    "plot_id": "WB-KOL-PLOT-1482",
+    "property_name": "Structure #1482",
+    "declared_owner": "Rohan Banerjee",
+    "declared_levels": 4,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2014
+  },
+  "WB-KOL-PLOT-1535": {
+    "plot_id": "WB-KOL-PLOT-1535",
+    "property_name": "Structure #1535",
+    "declared_owner": "Priyanka Dutta",
+    "declared_levels": 9,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2015
+  },
+  "WB-KOL-PLOT-1501": {
+    "plot_id": "WB-KOL-PLOT-1501",
+    "property_name": "Structure #1501",
+    "declared_owner": "Sourav Dutta",
+    "declared_levels": 5,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2016
+  },
+  "WB-KOL-PLOT-1244": {
+    "plot_id": "WB-KOL-PLOT-1244",
+    "property_name": "Structure #1244",
+    "declared_owner": "Vikram Sarkar",
+    "declared_levels": 6,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2017
+  },
+  "WB-KOL-PLOT-2630": {
+    "plot_id": "WB-KOL-PLOT-2630",
+    "property_name": "Structure #2630",
+    "declared_owner": "Sourav Ghosh",
+    "declared_levels": 6,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2018
+  },
+  "WB-KOL-PLOT-1503": {
+    "plot_id": "WB-KOL-PLOT-1503",
+    "property_name": "Structure #1503",
+    "declared_owner": "Pooja Das",
+    "declared_levels": 7,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2019
+  },
+  "WB-KOL-PLOT-1287": {
+    "plot_id": "WB-KOL-PLOT-1287",
+    "property_name": "Structure #1287",
+    "declared_owner": "Pooja Roy",
+    "declared_levels": 7,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2020
+  },
+  "WB-KOL-PLOT-1319": {
+    "plot_id": "WB-KOL-PLOT-1319",
+    "property_name": "Structure #1319",
+    "declared_owner": "Sourav Bose",
+    "declared_levels": 9,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2021
+  },
+  "WB-KOL-PLOT-1324": {
+    "plot_id": "WB-KOL-PLOT-1324",
+    "property_name": "Structure #1324",
+    "declared_owner": "Vikram Dutta",
+    "declared_levels": 8,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2022
+  },
+  "WB-KOL-PLOT-0764": {
+    "plot_id": "WB-KOL-PLOT-0764",
+    "property_name": "Structure #0764",
+    "declared_owner": "Ananya Roy",
+    "declared_levels": 6,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2014
+  },
+  "WB-KOL-PLOT-1320": {
+    "plot_id": "WB-KOL-PLOT-1320",
+    "property_name": "Structure #1320",
+    "declared_owner": "Sneha Sen",
+    "declared_levels": 4,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2015
+  },
+  "WB-KOL-PLOT-1562": {
+    "plot_id": "WB-KOL-PLOT-1562",
+    "property_name": "Structure #1562",
+    "declared_owner": "Priyanka Ghosh",
+    "declared_levels": 6,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2016
+  },
+  "WB-KOL-PLOT-1437": {
+    "plot_id": "WB-KOL-PLOT-1437",
+    "property_name": "Structure #1437",
+    "declared_owner": "Amit Dutta",
+    "declared_levels": 7,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2017
+  },
+  "WB-KOL-PLOT-1389": {
+    "plot_id": "WB-KOL-PLOT-1389",
+    "property_name": "Structure #1389",
+    "declared_owner": "Sourav Mukherjee",
+    "declared_levels": 7,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2018
+  },
+  "WB-KOL-PLOT-1563": {
+    "plot_id": "WB-KOL-PLOT-1563",
+    "property_name": "Structure #1563",
+    "declared_owner": "Amit Mukherjee",
+    "declared_levels": 7,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2019
+  },
+  "WB-KOL-PLOT-1502": {
+    "plot_id": "WB-KOL-PLOT-1502",
+    "property_name": "Structure #1502",
+    "declared_owner": "Rahul Sarkar",
+    "declared_levels": 6,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2020
+  },
+  "WB-KOL-PLOT-1311": {
+    "plot_id": "WB-KOL-PLOT-1311",
+    "property_name": "Structure #1311",
+    "declared_owner": "Debolina Roy",
+    "declared_levels": 7,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2021
+  },
+  "WB-KOL-PLOT-1370": {
+    "plot_id": "WB-KOL-PLOT-1370",
+    "property_name": "Structure #1370",
+    "declared_owner": "Ananya Banerjee",
+    "declared_levels": 6,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2022
+  },
+  "WB-KOL-PLOT-0847": {
+    "plot_id": "WB-KOL-PLOT-0847",
+    "property_name": "Structure #0847",
+    "declared_owner": "Priyanka Roy",
+    "declared_levels": 5,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2014
+  },
+  "WB-KOL-PLOT-1527": {
+    "plot_id": "WB-KOL-PLOT-1527",
+    "property_name": "Structure #1527",
+    "declared_owner": "Rohan Roy",
+    "declared_levels": 7,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2015
+  },
+  "WB-KOL-PLOT-1497": {
+    "plot_id": "WB-KOL-PLOT-1497",
+    "property_name": "Structure #1497",
+    "declared_owner": "Rahul Roy",
+    "declared_levels": 7,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2016
+  },
+  "WB-KOL-PLOT-1536": {
+    "plot_id": "WB-KOL-PLOT-1536",
+    "property_name": "Structure #1536",
+    "declared_owner": "Debolina Bose",
+    "declared_levels": 4,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2017
+  },
+  "WB-KOL-PLOT-1481": {
+    "plot_id": "WB-KOL-PLOT-1481",
+    "property_name": "Structure #1481",
+    "declared_owner": "Sourav Mukherjee",
+    "declared_levels": 9,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2018
+  },
+  "WB-KOL-PLOT-1250": {
+    "plot_id": "WB-KOL-PLOT-1250",
+    "property_name": "Structure #1250",
+    "declared_owner": "Rohan Roy",
+    "declared_levels": 6,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2019
+  },
+  "WB-KOL-PLOT-1283": {
+    "plot_id": "WB-KOL-PLOT-1283",
+    "property_name": "Structure #1283",
+    "declared_owner": "Pooja Sen",
+    "declared_levels": 9,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2020
+  },
+  "WB-KOL-PLOT-1371": {
+    "plot_id": "WB-KOL-PLOT-1371",
+    "property_name": "Structure #1371",
+    "declared_owner": "Priyanka Das",
+    "declared_levels": 7,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2021
+  },
+  "WB-KOL-PLOT-0742": {
+    "plot_id": "WB-KOL-PLOT-0742",
+    "property_name": "Structure #0742",
+    "declared_owner": "Rohan Sarkar",
+    "declared_levels": 8,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2022
+  },
+  "WB-KOL-PLOT-1434": {
+    "plot_id": "WB-KOL-PLOT-1434",
+    "property_name": "Structure #1434",
+    "declared_owner": "Rahul Bose",
+    "declared_levels": 4,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2014
+  },
+  "WB-KOL-PLOT-1337": {
+    "plot_id": "WB-KOL-PLOT-1337",
+    "property_name": "Structure #1337",
+    "declared_owner": "Debolina Dutta",
+    "declared_levels": 9,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2015
+  },
+  "WB-KOL-PLOT-0766": {
+    "plot_id": "WB-KOL-PLOT-0766",
+    "property_name": "Structure #0766",
+    "declared_owner": "Sneha Sarkar",
+    "declared_levels": 8,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2016
+  },
+  "WB-KOL-PLOT-2517": {
+    "plot_id": "WB-KOL-PLOT-2517",
+    "property_name": "Structure #2517",
+    "declared_owner": "Vikram Bose",
+    "declared_levels": 7,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2017
+  },
+  "WB-KOL-PLOT-0759": {
+    "plot_id": "WB-KOL-PLOT-0759",
+    "property_name": "Structure #0759",
+    "declared_owner": "Rahul Dutta",
+    "declared_levels": 7,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2018
+  },
+  "WB-KOL-PLOT-1249": {
+    "plot_id": "WB-KOL-PLOT-1249",
+    "property_name": "Structure #1249",
+    "declared_owner": "Vikram Ghosh",
+    "declared_levels": 5,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2019
+  },
+  "WB-KOL-PLOT-1510": {
+    "plot_id": "WB-KOL-PLOT-1510",
+    "property_name": "Structure #1510",
+    "declared_owner": "Rohan Das",
+    "declared_levels": 8,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2020
+  },
+  "WB-KOL-PLOT-1293": {
+    "plot_id": "WB-KOL-PLOT-1293",
+    "property_name": "Structure #1293",
+    "declared_owner": "Amit Sarkar",
+    "declared_levels": 7,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2021
+  },
+  "WB-KOL-PLOT-1388": {
+    "plot_id": "WB-KOL-PLOT-1388",
+    "property_name": "Structure #1388",
+    "declared_owner": "Ananya Banerjee",
+    "declared_levels": 6,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2022
+  },
+  "WB-KOL-PLOT-1445": {
+    "plot_id": "WB-KOL-PLOT-1445",
+    "property_name": "Structure #1445",
+    "declared_owner": "Rohan Das",
+    "declared_levels": 9,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2014
+  },
+  "WB-KOL-PLOT-3496": {
+    "plot_id": "WB-KOL-PLOT-3496",
+    "property_name": "Structure #3496",
+    "declared_owner": "Vikram Ghosh",
+    "declared_levels": 8,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2015
+  },
+  "WB-KOL-PLOT-1554": {
+    "plot_id": "WB-KOL-PLOT-1554",
+    "property_name": "Structure #1554",
+    "declared_owner": "Ananya Banerjee",
+    "declared_levels": 4,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2016
+  },
+  "WB-KOL-PLOT-1358": {
+    "plot_id": "WB-KOL-PLOT-1358",
+    "property_name": "Structure #1358",
+    "declared_owner": "Ananya Das",
+    "declared_levels": 6,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2017
+  },
+  "WB-KOL-PLOT-1439": {
+    "plot_id": "WB-KOL-PLOT-1439",
+    "property_name": "Structure #1439",
+    "declared_owner": "Sourav Roy",
+    "declared_levels": 9,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2018
+  },
+  "WB-KOL-PLOT-1478": {
+    "plot_id": "WB-KOL-PLOT-1478",
+    "property_name": "Structure #1478",
+    "declared_owner": "Vikram Sarkar",
+    "declared_levels": 6,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2019
+  },
+  "WB-KOL-PLOT-1223": {
+    "plot_id": "WB-KOL-PLOT-1223",
+    "property_name": "Tata Medical Centre",
+    "declared_owner": "Rahul Sen",
+    "declared_levels": 9,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2020
+  },
+  "WB-KOL-PLOT-1277": {
+    "plot_id": "WB-KOL-PLOT-1277",
+    "property_name": "Structure #1277",
+    "declared_owner": "Sourav Das",
+    "declared_levels": 9,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2021
+  },
+  "WB-KOL-PLOT-1493": {
+    "plot_id": "WB-KOL-PLOT-1493",
+    "property_name": "Structure #1493",
+    "declared_owner": "Sneha Dutta",
+    "declared_levels": 9,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2022
+  },
+  "WB-KOL-PLOT-1267": {
+    "plot_id": "WB-KOL-PLOT-1267",
+    "property_name": "Structure #1267",
+    "declared_owner": "Priyanka Das",
+    "declared_levels": 5,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2014
+  },
+  "WB-KOL-PLOT-0811": {
+    "plot_id": "WB-KOL-PLOT-0811",
+    "property_name": "Structure #0811",
+    "declared_owner": "Rahul Chatterjee",
+    "declared_levels": 5,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2015
+  },
+  "WB-KOL-PLOT-0712": {
+    "plot_id": "WB-KOL-PLOT-0712",
+    "property_name": "Cognizant ITP B1",
+    "declared_owner": "Priyanka Dutta",
+    "declared_levels": 9,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2016
+  },
+  "WB-KOL-PLOT-2543": {
+    "plot_id": "WB-KOL-PLOT-2543",
+    "property_name": "Structure #2543",
+    "declared_owner": "Vikram Ghosh",
+    "declared_levels": 9,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2017
+  },
+  "WB-KOL-PLOT-0751": {
+    "plot_id": "WB-KOL-PLOT-0751",
+    "property_name": "Structure #0751",
+    "declared_owner": "Debolina Roy",
+    "declared_levels": 5,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2018
+  },
+  "WB-KOL-PLOT-1454": {
+    "plot_id": "WB-KOL-PLOT-1454",
+    "property_name": "Structure #1454",
+    "declared_owner": "Vikram Ghosh",
+    "declared_levels": 6,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2019
+  },
+  "WB-KOL-PLOT-1521": {
+    "plot_id": "WB-KOL-PLOT-1521",
+    "property_name": "Structure #1521",
+    "declared_owner": "Pooja Chatterjee",
+    "declared_levels": 7,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2020
+  },
+  "WB-KOL-PLOT-2488": {
+    "plot_id": "WB-KOL-PLOT-2488",
+    "property_name": "Structure #2488",
+    "declared_owner": "Rohan Sen",
+    "declared_levels": 8,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2021
+  },
+  "WB-KOL-PLOT-0819": {
+    "plot_id": "WB-KOL-PLOT-0819",
+    "property_name": "Structure #0819",
+    "declared_owner": "Pooja Mukherjee",
+    "declared_levels": 7,
+    "declared_use": "Mixed Commercial",
+    "self_reported_status": "COMPLIANT",
+    "deed_registration_year": 2022
+  }
+}

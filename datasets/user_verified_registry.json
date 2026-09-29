@@ -1,0 +1,1578 @@
+{
+  "WB-KOL-PLOT-3507": {
+    "parcel_id": "WB-KOL-PLOT-3507",
+    "claimed_by": "Pooja Chatterjee",
+    "declared_floors": 7,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-IIF-04": {
+    "parcel_id": "WB-KOL-PLOT-IIF-04",
+    "claimed_by": "Mani Square Ltd / Casadona Enterprise",
+    "declared_floors": 15,
+    "declared_use": "Commercial IT / ITES",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-0705": {
+    "parcel_id": "WB-KOL-PLOT-0705",
+    "claimed_by": "Vikram Dutta",
+    "declared_floors": 7,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1273": {
+    "parcel_id": "WB-KOL-PLOT-1273",
+    "claimed_by": "Priyanka Banerjee",
+    "declared_floors": 5,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1459": {
+    "parcel_id": "WB-KOL-PLOT-1459",
+    "claimed_by": "Vikram Sarkar",
+    "declared_floors": 5,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1265": {
+    "parcel_id": "WB-KOL-PLOT-1265",
+    "claimed_by": "Pooja Sen",
+    "declared_floors": 9,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1402": {
+    "parcel_id": "WB-KOL-PLOT-1402",
+    "claimed_by": "Vikram Mukherjee",
+    "declared_floors": 8,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "UNCLAIMED"
+  },
+  "WB-KOL-PLOT-1252": {
+    "parcel_id": "WB-KOL-PLOT-1252",
+    "claimed_by": "Vikram Banerjee",
+    "declared_floors": 6,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1424": {
+    "parcel_id": "WB-KOL-PLOT-1424",
+    "claimed_by": "Sourav Bose",
+    "declared_floors": 6,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-0842": {
+    "parcel_id": "WB-KOL-PLOT-0842",
+    "claimed_by": "Rahul Ghosh",
+    "declared_floors": 6,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1422": {
+    "parcel_id": "WB-KOL-PLOT-1422",
+    "claimed_by": "Sneha Sarkar",
+    "declared_floors": 4,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1239": {
+    "parcel_id": "WB-KOL-PLOT-1239",
+    "claimed_by": "Pooja Banerjee",
+    "declared_floors": 7,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1297": {
+    "parcel_id": "WB-KOL-PLOT-1297",
+    "claimed_by": "Amit Sen",
+    "declared_floors": 5,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-0800": {
+    "parcel_id": "WB-KOL-PLOT-0800",
+    "claimed_by": "Rahul Bose",
+    "declared_floors": 6,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "UNCLAIMED"
+  },
+  "WB-KOL-PLOT-3587": {
+    "parcel_id": "WB-KOL-PLOT-3587",
+    "claimed_by": "Amit Das",
+    "declared_floors": 9,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1451": {
+    "parcel_id": "WB-KOL-PLOT-1451",
+    "claimed_by": "Amit Das",
+    "declared_floors": 9,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1369": {
+    "parcel_id": "WB-KOL-PLOT-1369",
+    "claimed_by": "Sourav Sen",
+    "declared_floors": 5,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-2564": {
+    "parcel_id": "WB-KOL-PLOT-2564",
+    "claimed_by": "Priyanka Chatterjee",
+    "declared_floors": 6,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1409": {
+    "parcel_id": "WB-KOL-PLOT-1409",
+    "claimed_by": "Rahul Sen",
+    "declared_floors": 9,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1387": {
+    "parcel_id": "WB-KOL-PLOT-1387",
+    "claimed_by": "Pooja Ghosh",
+    "declared_floors": 5,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-0732": {
+    "parcel_id": "WB-KOL-PLOT-0732",
+    "claimed_by": "Pooja Roy",
+    "declared_floors": 4,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "UNCLAIMED"
+  },
+  "WB-KOL-PLOT-0810": {
+    "parcel_id": "WB-KOL-PLOT-0810",
+    "claimed_by": "Vikram Sarkar",
+    "declared_floors": 4,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-2594": {
+    "parcel_id": "WB-KOL-PLOT-2594",
+    "claimed_by": "Ananya Mukherjee",
+    "declared_floors": 6,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1561": {
+    "parcel_id": "WB-KOL-PLOT-1561",
+    "claimed_by": "Vikram Ghosh",
+    "declared_floors": 3,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-0850": {
+    "parcel_id": "WB-KOL-PLOT-0850",
+    "claimed_by": "Pooja Mukherjee",
+    "declared_floors": 8,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-0771": {
+    "parcel_id": "WB-KOL-PLOT-0771",
+    "claimed_by": "Rohan Sarkar",
+    "declared_floors": 7,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-3501": {
+    "parcel_id": "WB-KOL-PLOT-3501",
+    "claimed_by": "Priyanka Banerjee",
+    "declared_floors": 7,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-0763": {
+    "parcel_id": "WB-KOL-PLOT-0763",
+    "claimed_by": "Vikram Dutta",
+    "declared_floors": 5,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "UNCLAIMED"
+  },
+  "WB-KOL-PLOT-1552": {
+    "parcel_id": "WB-KOL-PLOT-1552",
+    "claimed_by": "Amit Mukherjee",
+    "declared_floors": 8,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1423": {
+    "parcel_id": "WB-KOL-PLOT-1423",
+    "claimed_by": "Vikram Sarkar",
+    "declared_floors": 5,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1544": {
+    "parcel_id": "WB-KOL-PLOT-1544",
+    "claimed_by": "Pooja Banerjee",
+    "declared_floors": 6,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1318": {
+    "parcel_id": "WB-KOL-PLOT-1318",
+    "claimed_by": "Priyanka Bose",
+    "declared_floors": 8,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1450": {
+    "parcel_id": "WB-KOL-PLOT-1450",
+    "claimed_by": "Sneha Sen",
+    "declared_floors": 8,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1264": {
+    "parcel_id": "WB-KOL-PLOT-1264",
+    "claimed_by": "Priyanka Mukherjee",
+    "declared_floors": 8,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1308": {
+    "parcel_id": "WB-KOL-PLOT-1308",
+    "claimed_by": "Ananya Chatterjee",
+    "declared_floors": 4,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "UNCLAIMED"
+  },
+  "WB-KOL-PLOT-1500": {
+    "parcel_id": "WB-KOL-PLOT-1500",
+    "claimed_by": "Vikram Roy",
+    "declared_floors": 4,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-0812": {
+    "parcel_id": "WB-KOL-PLOT-0812",
+    "claimed_by": "Rohan Sen",
+    "declared_floors": 6,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-3503": {
+    "parcel_id": "WB-KOL-PLOT-3503",
+    "claimed_by": "Amit Sarkar",
+    "declared_floors": 9,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1495": {
+    "parcel_id": "WB-KOL-PLOT-1495",
+    "claimed_by": "Rahul Mukherjee",
+    "declared_floors": 5,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1515": {
+    "parcel_id": "WB-KOL-PLOT-1515",
+    "claimed_by": "Rahul Chatterjee",
+    "declared_floors": 7,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1533": {
+    "parcel_id": "WB-KOL-PLOT-1533",
+    "claimed_by": "Amit Ghosh",
+    "declared_floors": 7,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1353": {
+    "parcel_id": "WB-KOL-PLOT-1353",
+    "claimed_by": "Debolina Bose",
+    "declared_floors": 7,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "UNCLAIMED"
+  },
+  "WB-KOL-PLOT-1435": {
+    "parcel_id": "WB-KOL-PLOT-1435",
+    "claimed_by": "Priyanka Sarkar",
+    "declared_floors": 5,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1310": {
+    "parcel_id": "WB-KOL-PLOT-1310",
+    "claimed_by": "Amit Mukherjee",
+    "declared_floors": 6,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1253": {
+    "parcel_id": "WB-KOL-PLOT-1253",
+    "claimed_by": "Ananya Bose",
+    "declared_floors": 7,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-3502": {
+    "parcel_id": "WB-KOL-PLOT-3502",
+    "claimed_by": "Vikram Bose",
+    "declared_floors": 8,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-2500": {
+    "parcel_id": "WB-KOL-PLOT-2500",
+    "claimed_by": "Rohan Bose",
+    "declared_floors": 8,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-3500": {
+    "parcel_id": "WB-KOL-PLOT-3500",
+    "claimed_by": "Sourav Chatterjee",
+    "declared_floors": 6,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-3514": {
+    "parcel_id": "WB-KOL-PLOT-3514",
+    "claimed_by": "Sneha Ghosh",
+    "declared_floors": 8,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "UNCLAIMED"
+  },
+  "WB-KOL-PLOT-1582": {
+    "parcel_id": "WB-KOL-PLOT-1582",
+    "claimed_by": "Ananya Mukherjee",
+    "declared_floors": 8,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1590": {
+    "parcel_id": "WB-KOL-PLOT-1590",
+    "claimed_by": "Amit Chatterjee",
+    "declared_floors": 4,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1591": {
+    "parcel_id": "WB-KOL-PLOT-1591",
+    "claimed_by": "Sneha Chatterjee",
+    "declared_floors": 5,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-3516": {
+    "parcel_id": "WB-KOL-PLOT-3516",
+    "claimed_by": "Vikram Dutta",
+    "declared_floors": 4,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1386": {
+    "parcel_id": "WB-KOL-PLOT-1386",
+    "claimed_by": "Vikram Dutta",
+    "declared_floors": 4,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-3512": {
+    "parcel_id": "WB-KOL-PLOT-3512",
+    "claimed_by": "Debolina Das",
+    "declared_floors": 6,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-3497": {
+    "parcel_id": "WB-KOL-PLOT-3497",
+    "claimed_by": "Priyanka Mukherjee",
+    "declared_floors": 9,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "UNCLAIMED"
+  },
+  "WB-KOL-PLOT-3519": {
+    "parcel_id": "WB-KOL-PLOT-3519",
+    "claimed_by": "Ananya Banerjee",
+    "declared_floors": 7,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-0832": {
+    "parcel_id": "WB-KOL-PLOT-0832",
+    "claimed_by": "Ananya Roy",
+    "declared_floors": 8,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-3517": {
+    "parcel_id": "WB-KOL-PLOT-3517",
+    "claimed_by": "Pooja Dutta",
+    "declared_floors": 5,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1441": {
+    "parcel_id": "WB-KOL-PLOT-1441",
+    "claimed_by": "Sourav Sarkar",
+    "declared_floors": 5,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1289": {
+    "parcel_id": "WB-KOL-PLOT-1289",
+    "claimed_by": "Sourav Dutta",
+    "declared_floors": 9,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1288": {
+    "parcel_id": "WB-KOL-PLOT-1288",
+    "claimed_by": "Debolina Chatterjee",
+    "declared_floors": 8,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-0821": {
+    "parcel_id": "WB-KOL-PLOT-0821",
+    "claimed_by": "Amit Ghosh",
+    "declared_floors": 9,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "UNCLAIMED"
+  },
+  "WB-KOL-PLOT-1438": {
+    "parcel_id": "WB-KOL-PLOT-1438",
+    "claimed_by": "Sneha Ghosh",
+    "declared_floors": 8,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-0807": {
+    "parcel_id": "WB-KOL-PLOT-0807",
+    "claimed_by": "Rohan Sarkar",
+    "declared_floors": 7,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-3518": {
+    "parcel_id": "WB-KOL-PLOT-3518",
+    "claimed_by": "Sneha Mukherjee",
+    "declared_floors": 6,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1559": {
+    "parcel_id": "WB-KOL-PLOT-1559",
+    "claimed_by": "Rohan Mukherjee",
+    "declared_floors": 9,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1367": {
+    "parcel_id": "WB-KOL-PLOT-1367",
+    "claimed_by": "Vikram Roy",
+    "declared_floors": 9,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-0831": {
+    "parcel_id": "WB-KOL-PLOT-0831",
+    "claimed_by": "Priyanka Roy",
+    "declared_floors": 7,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-3509": {
+    "parcel_id": "WB-KOL-PLOT-3509",
+    "claimed_by": "Sourav Mukherjee",
+    "declared_floors": 9,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "UNCLAIMED"
+  },
+  "WB-KOL-PLOT-3498": {
+    "parcel_id": "WB-KOL-PLOT-3498",
+    "claimed_by": "Rahul Das",
+    "declared_floors": 4,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1316": {
+    "parcel_id": "WB-KOL-PLOT-1316",
+    "claimed_by": "Priyanka Roy",
+    "declared_floors": 6,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-3499": {
+    "parcel_id": "WB-KOL-PLOT-3499",
+    "claimed_by": "Debolina Das",
+    "declared_floors": 5,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1479": {
+    "parcel_id": "WB-KOL-PLOT-1479",
+    "claimed_by": "Rahul Sarkar",
+    "declared_floors": 7,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-3511": {
+    "parcel_id": "WB-KOL-PLOT-3511",
+    "claimed_by": "Ananya Sen",
+    "declared_floors": 5,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-3513": {
+    "parcel_id": "WB-KOL-PLOT-3513",
+    "claimed_by": "Rahul Bose",
+    "declared_floors": 7,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-3510": {
+    "parcel_id": "WB-KOL-PLOT-3510",
+    "claimed_by": "Amit Das",
+    "declared_floors": 4,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "UNCLAIMED"
+  },
+  "WB-KOL-PLOT-3515": {
+    "parcel_id": "WB-KOL-PLOT-3515",
+    "claimed_by": "Sourav Ghosh",
+    "declared_floors": 9,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1343": {
+    "parcel_id": "WB-KOL-PLOT-1343",
+    "claimed_by": "Sourav Roy",
+    "declared_floors": 9,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-2602": {
+    "parcel_id": "WB-KOL-PLOT-2602",
+    "claimed_by": "Sourav Roy",
+    "declared_floors": 8,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1504": {
+    "parcel_id": "WB-KOL-PLOT-1504",
+    "claimed_by": "Sourav Mukherjee",
+    "declared_floors": 8,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-2507": {
+    "parcel_id": "WB-KOL-PLOT-2507",
+    "claimed_by": "Sneha Chatterjee",
+    "declared_floors": 9,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-0780": {
+    "parcel_id": "WB-KOL-PLOT-0780",
+    "claimed_by": "Sneha Chatterjee",
+    "declared_floors": 4,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-2490": {
+    "parcel_id": "WB-KOL-PLOT-2490",
+    "claimed_by": "Sourav Sarkar",
+    "declared_floors": 4,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "UNCLAIMED"
+  },
+  "WB-KOL-PLOT-2546": {
+    "parcel_id": "WB-KOL-PLOT-2546",
+    "claimed_by": "Vikram Ghosh",
+    "declared_floors": 6,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-3472": {
+    "parcel_id": "WB-KOL-PLOT-3472",
+    "claimed_by": "Sourav Mukherjee",
+    "declared_floors": 8,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-3808": {
+    "parcel_id": "WB-KOL-PLOT-3808",
+    "claimed_by": "Rohan Sen",
+    "declared_floors": 8,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-0734": {
+    "parcel_id": "WB-KOL-PLOT-0734",
+    "claimed_by": "Sneha Banerjee",
+    "declared_floors": 6,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-0851": {
+    "parcel_id": "WB-KOL-PLOT-0851",
+    "claimed_by": "Priyanka Mukherjee",
+    "declared_floors": 9,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-2551": {
+    "parcel_id": "WB-KOL-PLOT-2551",
+    "claimed_by": "Pooja Sen",
+    "declared_floors": 5,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-3992": {
+    "parcel_id": "WB-KOL-PLOT-3992",
+    "claimed_by": "Sneha Banerjee",
+    "declared_floors": 6,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "UNCLAIMED"
+  },
+  "WB-KOL-PLOT-1440": {
+    "parcel_id": "WB-KOL-PLOT-1440",
+    "claimed_by": "Debolina Mukherjee",
+    "declared_floors": 4,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-0846": {
+    "parcel_id": "WB-KOL-PLOT-0846",
+    "claimed_by": "Rohan Bose",
+    "declared_floors": 4,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1286": {
+    "parcel_id": "WB-KOL-PLOT-1286",
+    "claimed_by": "Pooja Roy",
+    "declared_floors": 6,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-0840": {
+    "parcel_id": "WB-KOL-PLOT-0840",
+    "claimed_by": "Vikram Mukherjee",
+    "declared_floors": 4,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1216": {
+    "parcel_id": "WB-KOL-PLOT-1216",
+    "claimed_by": "Sneha Das",
+    "declared_floors": 8,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1361": {
+    "parcel_id": "WB-KOL-PLOT-1361",
+    "claimed_by": "Vikram Sarkar",
+    "declared_floors": 9,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-0809": {
+    "parcel_id": "WB-KOL-PLOT-0809",
+    "claimed_by": "Debolina Sen",
+    "declared_floors": 9,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "UNCLAIMED"
+  },
+  "WB-KOL-PLOT-1524": {
+    "parcel_id": "WB-KOL-PLOT-1524",
+    "claimed_by": "Priyanka Das",
+    "declared_floors": 4,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-0817": {
+    "parcel_id": "WB-KOL-PLOT-0817",
+    "claimed_by": "Pooja Sarkar",
+    "declared_floors": 5,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1551": {
+    "parcel_id": "WB-KOL-PLOT-1551",
+    "claimed_by": "Rohan Ghosh",
+    "declared_floors": 7,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-0841": {
+    "parcel_id": "WB-KOL-PLOT-0841",
+    "claimed_by": "Priyanka Roy",
+    "declared_floors": 5,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-0803": {
+    "parcel_id": "WB-KOL-PLOT-0803",
+    "claimed_by": "Priyanka Dutta",
+    "declared_floors": 9,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1483": {
+    "parcel_id": "WB-KOL-PLOT-1483",
+    "claimed_by": "Rahul Dutta",
+    "declared_floors": 5,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1325": {
+    "parcel_id": "WB-KOL-PLOT-1325",
+    "claimed_by": "Sneha Roy",
+    "declared_floors": 9,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "UNCLAIMED"
+  },
+  "WB-KOL-PLOT-1565": {
+    "parcel_id": "WB-KOL-PLOT-1565",
+    "claimed_by": "Priyanka Sen",
+    "declared_floors": 9,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1354": {
+    "parcel_id": "WB-KOL-PLOT-1354",
+    "claimed_by": "Amit Bose",
+    "declared_floors": 8,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1575": {
+    "parcel_id": "WB-KOL-PLOT-1575",
+    "claimed_by": "Rohan Mukherjee",
+    "declared_floors": 7,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1254": {
+    "parcel_id": "WB-KOL-PLOT-1254",
+    "claimed_by": "Rohan Dutta",
+    "declared_floors": 4,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1585": {
+    "parcel_id": "WB-KOL-PLOT-1585",
+    "claimed_by": "Sneha Sen",
+    "declared_floors": 5,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-0829": {
+    "parcel_id": "WB-KOL-PLOT-0829",
+    "claimed_by": "Sourav Chatterjee",
+    "declared_floors": 5,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1415": {
+    "parcel_id": "WB-KOL-PLOT-1415",
+    "claimed_by": "Rahul Das",
+    "declared_floors": 9,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "UNCLAIMED"
+  },
+  "WB-KOL-PLOT-0828": {
+    "parcel_id": "WB-KOL-PLOT-0828",
+    "claimed_by": "Priyanka Roy",
+    "declared_floors": 4,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1405": {
+    "parcel_id": "WB-KOL-PLOT-1405",
+    "claimed_by": "Rohan Dutta",
+    "declared_floors": 5,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1399": {
+    "parcel_id": "WB-KOL-PLOT-1399",
+    "claimed_by": "Rahul Mukherjee",
+    "declared_floors": 5,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-0755": {
+    "parcel_id": "WB-KOL-PLOT-0755",
+    "claimed_by": "Rohan Chatterjee",
+    "declared_floors": 9,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-0746": {
+    "parcel_id": "WB-KOL-PLOT-0746",
+    "claimed_by": "Sourav Sarkar",
+    "declared_floors": 6,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1417": {
+    "parcel_id": "WB-KOL-PLOT-1417",
+    "claimed_by": "Pooja Bose",
+    "declared_floors": 5,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-0726": {
+    "parcel_id": "WB-KOL-PLOT-0726",
+    "claimed_by": "Sneha Banerjee",
+    "declared_floors": 4,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "UNCLAIMED"
+  },
+  "WB-KOL-PLOT-0820": {
+    "parcel_id": "WB-KOL-PLOT-0820",
+    "claimed_by": "Debolina Banerjee",
+    "declared_floors": 8,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-0706": {
+    "parcel_id": "WB-KOL-PLOT-0706",
+    "claimed_by": "Rohan Sarkar",
+    "declared_floors": 8,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1359": {
+    "parcel_id": "WB-KOL-PLOT-1359",
+    "claimed_by": "Debolina Sarkar",
+    "declared_floors": 7,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1522": {
+    "parcel_id": "WB-KOL-PLOT-1522",
+    "claimed_by": "Debolina Das",
+    "declared_floors": 8,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1429": {
+    "parcel_id": "WB-KOL-PLOT-1429",
+    "claimed_by": "Rahul Das",
+    "declared_floors": 5,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1313": {
+    "parcel_id": "WB-KOL-PLOT-1313",
+    "claimed_by": "Pooja Mukherjee",
+    "declared_floors": 9,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1406": {
+    "parcel_id": "WB-KOL-PLOT-1406",
+    "claimed_by": "Ananya Dutta",
+    "declared_floors": 6,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "UNCLAIMED"
+  },
+  "WB-KOL-PLOT-1256": {
+    "parcel_id": "WB-KOL-PLOT-1256",
+    "claimed_by": "Priyanka Sen",
+    "declared_floors": 6,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1272": {
+    "parcel_id": "WB-KOL-PLOT-1272",
+    "claimed_by": "Amit Chatterjee",
+    "declared_floors": 4,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1516": {
+    "parcel_id": "WB-KOL-PLOT-1516",
+    "claimed_by": "Priyanka Banerjee",
+    "declared_floors": 8,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1471": {
+    "parcel_id": "WB-KOL-PLOT-1471",
+    "claimed_by": "Sneha Roy",
+    "declared_floors": 5,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1413": {
+    "parcel_id": "WB-KOL-PLOT-1413",
+    "claimed_by": "Priyanka Sarkar",
+    "declared_floors": 7,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1491": {
+    "parcel_id": "WB-KOL-PLOT-1491",
+    "claimed_by": "Debolina Das",
+    "declared_floors": 7,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1462": {
+    "parcel_id": "WB-KOL-PLOT-1462",
+    "claimed_by": "Rohan Dutta",
+    "declared_floors": 8,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "UNCLAIMED"
+  },
+  "WB-KOL-PLOT-1231": {
+    "parcel_id": "WB-KOL-PLOT-1231",
+    "claimed_by": "Amit Chatterjee",
+    "declared_floors": 5,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1301": {
+    "parcel_id": "WB-KOL-PLOT-1301",
+    "claimed_by": "Pooja Ghosh",
+    "declared_floors": 9,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1303": {
+    "parcel_id": "WB-KOL-PLOT-1303",
+    "claimed_by": "Priyanka Dutta",
+    "declared_floors": 5,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-2525": {
+    "parcel_id": "WB-KOL-PLOT-2525",
+    "claimed_by": "Ananya Chatterjee",
+    "declared_floors": 9,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1321": {
+    "parcel_id": "WB-KOL-PLOT-1321",
+    "claimed_by": "Debolina Sen",
+    "declared_floors": 5,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1374": {
+    "parcel_id": "WB-KOL-PLOT-1374",
+    "claimed_by": "Vikram Sarkar",
+    "declared_floors": 4,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1382": {
+    "parcel_id": "WB-KOL-PLOT-1382",
+    "claimed_by": "Pooja Bose",
+    "declared_floors": 6,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "UNCLAIMED"
+  },
+  "WB-KOL-PLOT-1233": {
+    "parcel_id": "WB-KOL-PLOT-1233",
+    "claimed_by": "Ananya Das",
+    "declared_floors": 7,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1547": {
+    "parcel_id": "WB-KOL-PLOT-1547",
+    "claimed_by": "Sourav Mukherjee",
+    "declared_floors": 9,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1443": {
+    "parcel_id": "WB-KOL-PLOT-1443",
+    "claimed_by": "Ananya Sen",
+    "declared_floors": 7,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1482": {
+    "parcel_id": "WB-KOL-PLOT-1482",
+    "claimed_by": "Priyanka Mukherjee",
+    "declared_floors": 4,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1535": {
+    "parcel_id": "WB-KOL-PLOT-1535",
+    "claimed_by": "Ananya Bose",
+    "declared_floors": 9,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1501": {
+    "parcel_id": "WB-KOL-PLOT-1501",
+    "claimed_by": "Rohan Das",
+    "declared_floors": 5,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1244": {
+    "parcel_id": "WB-KOL-PLOT-1244",
+    "claimed_by": "Sneha Sarkar",
+    "declared_floors": 6,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "UNCLAIMED"
+  },
+  "WB-KOL-PLOT-2630": {
+    "parcel_id": "WB-KOL-PLOT-2630",
+    "claimed_by": "Sneha Banerjee",
+    "declared_floors": 6,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1503": {
+    "parcel_id": "WB-KOL-PLOT-1503",
+    "claimed_by": "Rahul Chatterjee",
+    "declared_floors": 7,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1287": {
+    "parcel_id": "WB-KOL-PLOT-1287",
+    "claimed_by": "Priyanka Roy",
+    "declared_floors": 7,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1319": {
+    "parcel_id": "WB-KOL-PLOT-1319",
+    "claimed_by": "Ananya Chatterjee",
+    "declared_floors": 9,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1324": {
+    "parcel_id": "WB-KOL-PLOT-1324",
+    "claimed_by": "Amit Dutta",
+    "declared_floors": 8,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-0764": {
+    "parcel_id": "WB-KOL-PLOT-0764",
+    "claimed_by": "Rahul Mukherjee",
+    "declared_floors": 6,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1320": {
+    "parcel_id": "WB-KOL-PLOT-1320",
+    "claimed_by": "Amit Banerjee",
+    "declared_floors": 4,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "UNCLAIMED"
+  },
+  "WB-KOL-PLOT-1562": {
+    "parcel_id": "WB-KOL-PLOT-1562",
+    "claimed_by": "Debolina Roy",
+    "declared_floors": 6,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1437": {
+    "parcel_id": "WB-KOL-PLOT-1437",
+    "claimed_by": "Priyanka Roy",
+    "declared_floors": 7,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1389": {
+    "parcel_id": "WB-KOL-PLOT-1389",
+    "claimed_by": "Ananya Chatterjee",
+    "declared_floors": 7,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1563": {
+    "parcel_id": "WB-KOL-PLOT-1563",
+    "claimed_by": "Amit Banerjee",
+    "declared_floors": 7,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1502": {
+    "parcel_id": "WB-KOL-PLOT-1502",
+    "claimed_by": "Rohan Dutta",
+    "declared_floors": 6,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1311": {
+    "parcel_id": "WB-KOL-PLOT-1311",
+    "claimed_by": "Sourav Mukherjee",
+    "declared_floors": 7,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1370": {
+    "parcel_id": "WB-KOL-PLOT-1370",
+    "claimed_by": "Debolina Ghosh",
+    "declared_floors": 6,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "UNCLAIMED"
+  },
+  "WB-KOL-PLOT-0847": {
+    "parcel_id": "WB-KOL-PLOT-0847",
+    "claimed_by": "Ananya Bose",
+    "declared_floors": 5,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1527": {
+    "parcel_id": "WB-KOL-PLOT-1527",
+    "claimed_by": "Vikram Sarkar",
+    "declared_floors": 7,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1497": {
+    "parcel_id": "WB-KOL-PLOT-1497",
+    "claimed_by": "Debolina Mukherjee",
+    "declared_floors": 7,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1536": {
+    "parcel_id": "WB-KOL-PLOT-1536",
+    "claimed_by": "Amit Banerjee",
+    "declared_floors": 4,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1481": {
+    "parcel_id": "WB-KOL-PLOT-1481",
+    "claimed_by": "Vikram Sarkar",
+    "declared_floors": 9,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1250": {
+    "parcel_id": "WB-KOL-PLOT-1250",
+    "claimed_by": "Debolina Roy",
+    "declared_floors": 6,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1283": {
+    "parcel_id": "WB-KOL-PLOT-1283",
+    "claimed_by": "Debolina Dutta",
+    "declared_floors": 9,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "UNCLAIMED"
+  },
+  "WB-KOL-PLOT-1371": {
+    "parcel_id": "WB-KOL-PLOT-1371",
+    "claimed_by": "Pooja Sarkar",
+    "declared_floors": 7,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-0742": {
+    "parcel_id": "WB-KOL-PLOT-0742",
+    "claimed_by": "Ananya Ghosh",
+    "declared_floors": 8,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1434": {
+    "parcel_id": "WB-KOL-PLOT-1434",
+    "claimed_by": "Sneha Chatterjee",
+    "declared_floors": 4,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1337": {
+    "parcel_id": "WB-KOL-PLOT-1337",
+    "claimed_by": "Priyanka Sen",
+    "declared_floors": 9,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-0766": {
+    "parcel_id": "WB-KOL-PLOT-0766",
+    "claimed_by": "Pooja Das",
+    "declared_floors": 8,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-2517": {
+    "parcel_id": "WB-KOL-PLOT-2517",
+    "claimed_by": "Sourav Sarkar",
+    "declared_floors": 7,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-0759": {
+    "parcel_id": "WB-KOL-PLOT-0759",
+    "claimed_by": "Vikram Mukherjee",
+    "declared_floors": 7,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "UNCLAIMED"
+  },
+  "WB-KOL-PLOT-1249": {
+    "parcel_id": "WB-KOL-PLOT-1249",
+    "claimed_by": "Vikram Ghosh",
+    "declared_floors": 5,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1510": {
+    "parcel_id": "WB-KOL-PLOT-1510",
+    "claimed_by": "Rohan Bose",
+    "declared_floors": 8,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1293": {
+    "parcel_id": "WB-KOL-PLOT-1293",
+    "claimed_by": "Pooja Dutta",
+    "declared_floors": 7,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1388": {
+    "parcel_id": "WB-KOL-PLOT-1388",
+    "claimed_by": "Amit Banerjee",
+    "declared_floors": 6,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1445": {
+    "parcel_id": "WB-KOL-PLOT-1445",
+    "claimed_by": "Sourav Sarkar",
+    "declared_floors": 9,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-3496": {
+    "parcel_id": "WB-KOL-PLOT-3496",
+    "claimed_by": "Amit Ghosh",
+    "declared_floors": 8,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1554": {
+    "parcel_id": "WB-KOL-PLOT-1554",
+    "claimed_by": "Priyanka Chatterjee",
+    "declared_floors": 4,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "UNCLAIMED"
+  },
+  "WB-KOL-PLOT-1358": {
+    "parcel_id": "WB-KOL-PLOT-1358",
+    "claimed_by": "Pooja Chatterjee",
+    "declared_floors": 6,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1439": {
+    "parcel_id": "WB-KOL-PLOT-1439",
+    "claimed_by": "Amit Bose",
+    "declared_floors": 9,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1478": {
+    "parcel_id": "WB-KOL-PLOT-1478",
+    "claimed_by": "Rahul Dutta",
+    "declared_floors": 6,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1223": {
+    "parcel_id": "WB-KOL-PLOT-1223",
+    "claimed_by": "Pooja Das",
+    "declared_floors": 9,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1277": {
+    "parcel_id": "WB-KOL-PLOT-1277",
+    "claimed_by": "Vikram Sarkar",
+    "declared_floors": 9,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1493": {
+    "parcel_id": "WB-KOL-PLOT-1493",
+    "claimed_by": "Rohan Das",
+    "declared_floors": 9,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1267": {
+    "parcel_id": "WB-KOL-PLOT-1267",
+    "claimed_by": "Priyanka Banerjee",
+    "declared_floors": 5,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "UNCLAIMED"
+  },
+  "WB-KOL-PLOT-0811": {
+    "parcel_id": "WB-KOL-PLOT-0811",
+    "claimed_by": "Sourav Das",
+    "declared_floors": 5,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-0712": {
+    "parcel_id": "WB-KOL-PLOT-0712",
+    "claimed_by": "Sourav Dutta",
+    "declared_floors": 9,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-2543": {
+    "parcel_id": "WB-KOL-PLOT-2543",
+    "claimed_by": "Ananya Sen",
+    "declared_floors": 9,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-0751": {
+    "parcel_id": "WB-KOL-PLOT-0751",
+    "claimed_by": "Vikram Roy",
+    "declared_floors": 5,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1454": {
+    "parcel_id": "WB-KOL-PLOT-1454",
+    "claimed_by": "Debolina Mukherjee",
+    "declared_floors": 6,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-1521": {
+    "parcel_id": "WB-KOL-PLOT-1521",
+    "claimed_by": "Amit Sarkar",
+    "declared_floors": 7,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  },
+  "WB-KOL-PLOT-2488": {
+    "parcel_id": "WB-KOL-PLOT-2488",
+    "claimed_by": "Amit Dutta",
+    "declared_floors": 8,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "UNCLAIMED"
+  },
+  "WB-KOL-PLOT-0819": {
+    "parcel_id": "WB-KOL-PLOT-0819",
+    "claimed_by": "Pooja Bose",
+    "declared_floors": 7,
+    "declared_use": "Residential Apartment",
+    "user_verification_timestamp": "2026-04-12 10:30 IST",
+    "claim_status": "CLAIMED_AND_VERIFIED"
+  }
+}

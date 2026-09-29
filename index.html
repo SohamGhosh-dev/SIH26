@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIH VOID VERSOR | Cadastral & Land Data Collection Portal</title>
+  
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; }
+    
+    body {
+      min-height: 100vh;
+      background-color: #f8fafc;
+      color: #0f172a;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* Top Tricolor Accent Line (Saffron, White, Green) */
+    .top-tricolor-bar {
+      height: 5px;
+      width: 100%;
+      background: linear-gradient(90deg, #f97316 0%, #f97316 33.3%, #ffffff 33.3%, #ffffff 66.6%, #16a34a 66.6%, #16a34a 100%);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+
+    /* Official Government Header Ribbon (Light Theme matching Screenshot) */
+    .gov-header {
+      background: #ffffff;
+      color: #0f172a;
+      padding: 16px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+      position: relative;
+      z-index: 900;
+      margin-top: 5px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .brand-container {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .emblem-placeholder {
+      width: 46px;
+      height: 50px;
+      background: #ffffff;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    }
+
+    .brand-titles h1 {
+      font-size: 24px;
+      font-weight: 900;
+      color: #d97706; /* Saffron government accent */
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      line-height: 1.1;
+    }
+
+    .brand-titles p {
+      font-size: 13.5px;
+      color: #475569;
+      font-weight: 500;
+      margin-top: 2px;
+    }
+
+    .header-right-meta {
+      text-align: right;
+      font-size: 12px;
+      color: #64748b;
+    }
+
+    .header-right-meta strong {
+      color: #0f172a;
+      display: block;
+      font-weight: 700;
+    }
+
+    /* Indian Landmark Background Slideshow */
+    .slideshow-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 1;
+      overflow: hidden;
+    }
+
+    .slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      opacity: 0;
+      transition: opacity 1.5s ease-in-out, transform 8s ease;
+      transform: scale(1.04);
+    }
+
+    .slide.active {
+      opacity: 1;
+      transform: scale(1.0);
+    }
+
+    .overlay-vignette {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.25);
+      backdrop-filter: blur(2px);
+      z-index: 2;
+    }
+
+    /* Main Portal Content Area */
+    .portal-wrapper {
+      position: relative;
+      z-index: 10;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .portal-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      max-width: 980px;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    /* Frosted Light Glassmorphism Cards (Exact Screenshot Match) */
+    .portal-card {
+      background: rgba(255, 255, 255, 0.78);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid rgba(255, 255, 255, 0.9);
+      border-radius: 20px;
+      padding: 36px 30px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.18);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .portal-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+    }
+
+    .card-icon-pill {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    .pill-public { background: #ffedd5; border: 1px solid #fdba74; color: #d97706; }
+    .pill-restricted { background: #dbeafe; border: 1px solid #93c5fd; color: #1d4ed8; }
+
+    .card-access-tag {
+      font-size: 11.5px;
+      font-weight: 800;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    .tag-public { color: #d97706; }
+    .tag-restricted { color: #1e40af; }
+
+    .portal-card h2 {
+      font-size: 24px;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 14px;
+      font-family: Georgia, serif;
+    }
+
+    .portal-card p {
+      font-size: 14px;
+      color: #334155;
+      line-height: 1.6;
+      margin-bottom: 28px;
+      flex: 1;
+    }
+
+    .card-action-container {
+      margin-top: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .btn-portal {
+      width: 100%;
+      padding: 13px 18px;
+      border-radius: 10px;
+      font-size: 13.5px;
+      font-weight: 700;
+      border: 1px solid #cbd5e1;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+      text-decoration: none;
+      background: #f8fafc;
+      color: #0f172a;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .btn-portal:hover {
+      background: #ffffff;
+      border-color: #94a3b8;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    }
+
+    .btn-sub-role {
+      background: #f1f5f9;
+      color: #0f172a;
+      font-size: 12.5px;
+      padding: 11px 14px;
+    }
+
+    .btn-sub-role:hover {
+      background: #ffffff;
+      color: #1d4ed8;
+      border-color: #3b82f6;
+    }
+
+    .sub-role-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 2px;
+    }
+
+    /* Bottom Landmark Caption Pill */
+    .landmark-caption-bar {
+      position: fixed;
+      bottom: 18px;
+      left: 24px;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      border: 1px solid #cbd5e1;
+      padding: 8px 18px;
+      border-radius: 30px;
+      font-size: 12px;
+      color: #334155;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+    }
+
+    .landmark-caption-bar strong {
+      color: #d97706;
+    }
+
+    /* Modal Overlay for Secure Verification (Light Theme) */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(15, 23, 42, 0.55);
+      backdrop-filter: blur(10px);
+      z-index: 2000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      opacity: 0;
+      transition: opacity 0.25s ease;
+    }
+
+    .modal-overlay.active {
+      display: flex;
+      opacity: 1;
+    }
+
+    .modal-box {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-radius: 16px;
+      max-width: 520px;
+      width: 100%;
+      padding: 32px;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+      position: relative;
+      color: #0f172a;
+      animation: modalSlideUp 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    @keyframes modalSlideUp {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 18px;
+      right: 20px;
+      background: none;
+      border: none;
+      color: #64748b;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .modal-close:hover { color: #0f172a; }
+
+    .modal-header {
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .modal-header h3 {
+      font-size: 20px;
+      color: #d97706;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+    }
+
+    .modal-header p {
+      font-size: 13px;
+      color: #64748b;
+      margin-top: 4px;
+    }
+
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 12px;
+      font-weight: 700;
+      color: #475569;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .form-input, .form-select {
+      width: 100%;
+      padding: 11px 14px;
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      color: #0f172a;
+      font-size: 13.5px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .form-input:focus, .form-select:focus {
+      border-color: #d97706;
+      background: #ffffff;
+      box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.15);
+    }
+
+    .permission-badge-box {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-radius: 8px;
+      padding: 12px 14px;
+      margin: 16px 0;
+      font-size: 12.5px;
+      line-height: 1.6;
+    }
+
+    .permission-badge-box h5 {
+      color: #15803d;
+      font-size: 13px;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .permission-badge-box ul {
+      margin-left: 18px;
+      color: #334155;
+    }
+
+    .btn-verify-submit {
+      width: 100%;
+      padding: 13px;
+      background: linear-gradient(90deg, #d97706, #b45309);
+      color: #ffffff;
+      border: none;
+      border-radius: 8px;
+      font-weight: 800;
+      font-size: 14px;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(217, 119, 6, 0.3);
+      transition: background 0.2s;
+    }
+
+    .btn-verify-submit:hover {
+      background: linear-gradient(90deg, #b45309, #92400e);
+    }
+
+    /* Short Transition Screen Overlay */
+    .transition-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: #ffffff;
+      z-index: 3000;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #0f172a;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .transition-overlay.active {
+      display: flex;
+      opacity: 1;
+    }
+
+    .shield-spinner {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      border: 4px solid #fef3c7;
+      border-top-color: #d97706;
+      animation: spin 0.8s linear infinite;
+      margin-bottom: 24px;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .transition-status-text {
+      font-size: 19px;
+      font-weight: 800;
+      color: #d97706;
+      letter-spacing: -0.2px;
+      margin-bottom: 6px;
+    }
+
+    .transition-subtext {
+      font-size: 13.5px;
+      color: #64748b;
+    }
+
+    .progress-bar-bg {
+      width: 280px;
+      height: 6px;
+      background: #e2e8f0;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 20px;
+    }
+
+    .progress-bar-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #d97706, #16a34a);
+      transition: width 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Tricolor Accent Ribbon -->
+  <div class="top-tricolor-bar"></div>
+
+  <!-- Government Branding Header Ribbon -->
+  <header class="gov-header">
+    <div class="brand-container">
+      <div class="emblem-placeholder">🏛️</div>
+      <div class="brand-titles">
+        <h1>SIH VOID VERSOR</h1>
+        <p>Family Level Data Collection Portal</p>
+      </div>
+    </div>
+    <div class="header-right-meta">
+      <strong>National Cadastral Information System</strong>
+      <span>ISO 19152 (LADM) Compliant • Multi-Sensor Audit</span>
+    </div>
+  </header>
+
+  <!-- Landmark Background Slideshow -->
+  <div class="slideshow-container">
+    <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1558431382-27e303142255?auto=format&fit=crop&w=1920&q=80');" data-landmark="Victoria Memorial & Howrah Bridge, Kolkata"></div>
+    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1920&q=80');" data-landmark="Taj Mahal Heritage Complex, Agra"></div>
+    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=1920&q=80');" data-landmark="India Gate & Red Fort Monument, New Delhi"></div>
+    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1920&q=80');" data-landmark="Gateway of India, Mumbai"></div>
+    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?auto=format&fit=crop&w=1920&q=80');" data-landmark="Hawa Mahal Palace, Jaipur"></div>
+    <div class="overlay-vignette"></div>
+  </div>
+
+  <!-- Portal Access Cards (Light Frosted Glass Matching Screenshot) -->
+  <main class="portal-wrapper">
+    <div class="portal-grid">
+      
+      <!-- Card 1: Citizen / Family Access -->
+      <div class="portal-card">
+        <div class="card-icon-pill pill-public">👤</div>
+        <div class="card-access-tag tag-public">PUBLIC ACCESS</div>
+        <h2>Citizen / Family Login</h2>
+        <p>Citizens can check their application status and file claim grievances. Login with your applied mobile number and OTP.</p>
+        
+        <div class="card-action-container">
+          <button class="btn-portal" onclick="openLoginModal('citizen')">Access Citizen Portal →</button>
+        </div>
+      </div>
+
+      <!-- Card 2: Department Officer Access -->
+      <div class="portal-card">
+        <div class="card-icon-pill pill-restricted">🏛️</div>
+        <div class="card-access-tag tag-restricted">RESTRICTED — AUTHORISED PERSONNEL ONLY</div>
+        <h2>Department Officer Login</h2>
+        <p>For authorised department officials. Login using registered credentials.</p>
+        
+        <div class="card-action-container">
+          <div class="sub-role-grid">
+            <button class="btn-portal btn-sub-role" onclick="openLoginModal('enquiry_officer')">Access Enquiry Officer →</button>
+            <button class="btn-portal btn-sub-role" onclick="openLoginModal('operator')">Access Operator(KMC Only) →</button>
+          </div>
+          <button class="btn-portal" onclick="openLoginModal('dept_officer')">Access Department Officer →</button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Dynamic Landmark Caption -->
+  <div class="landmark-caption-bar">
+    📍 <span id="landmarkText">Victoria Memorial & Howrah Bridge, Kolkata</span> | <strong>SIH VOID VERSOR</strong>
+  </div>
+
+  <!-- Secure Login Modal (Light Theme) -->
+  <div id="loginModal" class="modal-overlay">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeLoginModal()">×</button>
+      
+      <div class="modal-header">
+        <h3 id="modalTitle">🔒 Secure Portal Verification</h3>
+        <p id="modalSub">SIH VOID VERSOR Government Access Gateway</p>
+      </div>
+
+      <form id="authForm" onsubmit="handleVerificationSubmit(event)">
+        <input type="hidden" id="selectedRole" value="citizen">
+        
+        <div class="form-group">
+          <label>Selected Portal Role</label>
+          <select id="roleSelector" class="form-select" onchange="updateModalRoleFields(this.value)">
+            <option value="citizen">👤 Citizen / Family Portal</option>
+            <option value="enquiry_officer">🔍 Enquiry Officer (Dispute & Inspection)</option>
+            <option value="operator">⚙️ Municipal Operator (KMC Property Registry)</option>
+            <option value="dept_officer">🏛️ Senior Department Officer (Full Revenue Admin)</option>
+          </select>
+        </div>
+
+        <div id="citizenFields">
+          <div class="form-group">
+            <label>Registered Mobile Number</label>
+            <input type="tel" class="form-input" id="mobileNumber" placeholder="Enter 10-digit mobile number" value="+91 98301 44892" required>
+          </div>
+          <div class="form-group">
+            <label>Verification OTP (One-Time Password)</label>
+            <input type="text" class="form-input" id="otpCode" placeholder="Enter 6-digit OTP (Default: 849204)" value="849204" required>
+          </div>
+        </div>
+
+        <div id="officerFields" style="display:none;">
+          <div class="form-group">
+            <label>Official Officer / Employee ID</label>
+            <input type="text" class="form-input" id="officerId" placeholder="e.g. WB-DEPT-8821" value="WB-DEPT-8821">
+          </div>
+          <div class="form-group">
+            <label>Government Security Authorization PIN</label>
+            <input type="password" class="form-input" id="securityPin" placeholder="••••••••" value="SecuredPass2026">
+          </div>
+        </div>
+
+        <div class="permission-badge-box" id="permissionBox">
+          <h5 id="permTitle">✓ Verified Role Permissions</h5>
+          <ul id="permList">
+            <li>Public 2D Cadastral Plot Boundary Inspection</li>
+            <li>Individual 3D ULPIN Certificate Search</li>
+            <li>Submit Citizen Title Claims & Grievance Registration</li>
+          </ul>
+        </div>
+
+        <button type="submit" class="btn-verify-submit" id="btnSubmitAuth">Authenticate & Access Dashboard →</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Animated Loading / Transition Overlay -->
+  <div id="transitionOverlay" class="transition-overlay">
+    <div class="shield-spinner"></div>
+    <div class="transition-status-text" id="transStatus">Verifying Credentials...</div>
+    <div class="transition-subtext" id="transSub">Establishing SSL Session token with SIH VOID VERSOR Core</div>
+    
+    <div class="progress-bar-bg">
+      <div class="progress-bar-fill" id="transProgress"></div>
+    </div>
+  </div>
+
+  <script>
+    // Browser Back Button & Page Restore Fix
+    window.addEventListener('pageshow', function(event) {
+      const transOverlay = document.getElementById('transitionOverlay');
+      if (transOverlay) {
+        transOverlay.classList.remove('active');
+        transOverlay.style.display = 'none';
+      }
+      const transProgress = document.getElementById('transProgress');
+      if (transProgress) {
+        transProgress.style.width = '0%';
+      }
+      closeLoginModal();
+    });
+
+    // Landmark Slideshow Logic
+    const slides = document.querySelectorAll('.slide');
+    const landmarkText = document.getElementById('landmarkText');
+    let currentSlide = 0;
+
+    function nextSlide() {
+      slides[currentSlide].classList.remove('active');
+      currentSlide = (currentSlide + 1) % slides.length;
+      slides[currentSlide].classList.add('active');
+      const landmarkName = slides[currentSlide].getAttribute('data-landmark');
+      if (landmarkText && landmarkName) {
+        landmarkText.innerText = landmarkName;
+      }
+    }
+    setInterval(nextSlide, 5000);
+
+    const permissionsMap = {
+      citizen: {
+        title: "👤 Citizen Access Scope",
+        list: [
+          "View 2D/3D Cadastral Plot & Setback Boundaries",
+          "Individual 3D ULPIN Certificate & Title Lookup",
+          "Submit Citizen Strata Title Claims & Grievances",
+          "Public Compliance Audit Status Inspection"
+        ]
+      },
+      enquiry_officer: {
+        title: "🔍 Enquiry Officer Access Scope",
+        list: [
+          "Discrepancy Investigation & Dispute Audit Log",
+          "Multi-Sensor Confidence Score Breakdown (LiDAR vs Satellite)",
+          "Review & Verification of Citizen Title Claims",
+          "Export Inspection Reports"
+        ]
+      },
+      operator: {
+        title: "⚙️ KMC Municipal Operator Access Scope",
+        list: [
+          "Cadastral Property Registration & Indexing",
+          "Municipal Property Tax Clearance Data Entry",
+          "3D Strata Unit Floorplan Vector Mapping",
+          "Resident Registry Dossier Updating"
+        ]
+      },
+      dept_officer: {
+        title: "🏛️ Senior Department Officer Access Scope (Full Administrator)",
+        list: [
+          "Full Tri-State Pattern Engine Control (Green / Red / Orange)",
+          "Section 217 Violation Notice Generation & Demolition Directives",
+          "3D ULPIN Official Certificate Clearance",
+          "AutoCAD Geometry Export (.DXF Strata Mesh)",
+          "Administrative Override & System Security Control"
+        ]
+      }
+    };
+
+    function openLoginModal(roleKey) {
+      const modal = document.getElementById('loginModal');
+      const roleSelector = document.getElementById('roleSelector');
+      roleSelector.value = roleKey;
+      updateModalRoleFields(roleKey);
+      modal.classList.add('active');
+    }
+
+    function closeLoginModal() {
+      const modal = document.getElementById('loginModal');
+      if (modal) modal.classList.remove('active');
+    }
+
+    function updateModalRoleFields(roleKey) {
+      document.getElementById('selectedRole').value = roleKey;
+      const citizenFields = document.getElementById('citizenFields');
+      const officerFields = document.getElementById('officerFields');
+      const permTitle = document.getElementById('permTitle');
+      const permList = document.getElementById('permList');
+
+      if (roleKey === 'citizen') {
+        citizenFields.style.display = 'block';
+        officerFields.style.display = 'none';
+      } else {
+        citizenFields.style.display = 'none';
+        officerFields.style.display = 'block';
+      }
+
+      const info = permissionsMap[roleKey] || permissionsMap.citizen;
+      permTitle.innerText = info.title;
+      permList.innerHTML = info.list.map(item => `<li>${item}</li>`).join('');
+    }
+
+    function handleVerificationSubmit(e) {
+      e.preventDefault();
+      const roleKey = document.getElementById('selectedRole').value;
+      closeLoginModal();
+
+      // Trigger Short Transition Screen
+      triggerTransitionToDashboard(roleKey);
+    }
+
+    function triggerTransitionToDashboard(roleKey) {
+      const transOverlay = document.getElementById('transitionOverlay');
+      const transStatus = document.getElementById('transStatus');
+      const transSub = document.getElementById('transSub');
+      const transProgress = document.getElementById('transProgress');
+
+      transOverlay.style.display = 'flex';
+      transOverlay.classList.add('active');
+
+      transStatus.innerText = "Authenticating Credentials...";
+      transSub.innerText = `Generating ISO 19152 session token for role: ${roleKey.toUpperCase()}`;
+      transProgress.style.width = "35%";
+
+      setTimeout(() => {
+        transStatus.innerText = "Fetching 3D ULPIN Spatial Registries...";
+        transSub.innerText = "Connecting to BhuNaksha Cadastral Database...";
+        transProgress.style.width = "75%";
+
+        setTimeout(() => {
+          transStatus.innerText = "Launching SIH VOID VERSOR Dashboard...";
+          transSub.innerText = "Loading Analytics & Spatial Twin View...";
+          transProgress.style.width = "100%";
+
+          setTimeout(() => {
+            window.location.href = `dashboard.html?role=${roleKey}`;
+          }, 300);
+
+        }, 300);
+
+      }, 300);
+    }
+  </script>
+</body>
+</html>
